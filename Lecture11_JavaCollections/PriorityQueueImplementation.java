@@ -21,3 +21,5 @@ public class PriorityQueueImplementation {
 
     }
 }
+
+// Same as lik above: DSA Queues W3Schools: https://www.w3schools.com/dsa/dsa_data_queues.php
