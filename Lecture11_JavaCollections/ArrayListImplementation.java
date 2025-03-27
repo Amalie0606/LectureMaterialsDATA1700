@@ -21,3 +21,5 @@ public class ArrayListImplementation {
 
     }
 }
+
+// Array list W3Schools: https://www.w3schools.com/java/java_arraylist.asp
