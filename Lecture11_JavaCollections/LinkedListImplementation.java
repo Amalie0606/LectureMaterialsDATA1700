@@ -24,3 +24,5 @@ public class LinkedListImplementation {
 
     }
 }
+
+// DSA Linked Lists W3Schools: https://www.w3schools.com/dsa/dsa_theory_linkedlists.php
