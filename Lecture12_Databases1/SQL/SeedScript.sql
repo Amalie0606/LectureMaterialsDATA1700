@@ -37,4 +37,9 @@ FROM public.enhancements;
 
 -- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
 -- Download: postgresql 17.4-1-windows-x64.exe (port number server is listed: 5432) Selected: Database Server
-
+-- PostgreSQL is an object-relational database management system.
+-- Supports a large part of the SQL standard and offers many modern features: 
+--> complex queries, foreign keys, triggers, updatable views, transactional integrity, multiversion concurrency control
+-- can be extended by the user in many ways, for example by adding new:
+--> data types, functions, operators, aggregate functions, index methods, procedural languages 
+-- More info: file:///C:/Program%20Files/PostgreSQL/17/doc/src/sgml/html/index.html 
