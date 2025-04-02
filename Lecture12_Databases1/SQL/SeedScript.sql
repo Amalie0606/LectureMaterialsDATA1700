@@ -35,3 +35,6 @@ VALUES
 SELECT id, name, description, type, manufacturer
 FROM public.enhancements;
 
+-- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
+-- Download: postgresql 17.4-1-windows-x64.exe
+
