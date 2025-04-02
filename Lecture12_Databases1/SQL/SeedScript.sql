@@ -73,6 +73,8 @@ SELECT version();
 
 -- SELECT: Primarily used for querying the database to retrieve specific information.
 
+-- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/ 
+
 
 
 
