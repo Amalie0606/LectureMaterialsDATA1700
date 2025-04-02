@@ -37,4 +37,4 @@ FROM public.enhancements;
 
 -- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
 -- Download: postgresql 17.4-1-windows-x64.exe (port number server is listed: 5432) Selected: Database Server
--- Where do I fix the password thing this is wrong I think
+
