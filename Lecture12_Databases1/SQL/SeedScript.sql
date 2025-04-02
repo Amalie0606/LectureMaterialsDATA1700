@@ -43,3 +43,39 @@ FROM public.enhancements;
 -- can be extended by the user in many ways, for example by adding new:
 --> data types, functions, operators, aggregate functions, index methods, procedural languages 
 -- More info: file:///C:/Program%20Files/PostgreSQL/17/doc/src/sgml/html/index.html 
+
+-- Example SQL Statement: 
+SELECT version();
+
+-- SQL commands divided (language): https://www.linkedin.com/pulse/types-sql-commands-ankush-thavali-8enef 
+--> 1. Data Definition: CREATE, DROP, ALTER, TURNICATE;
+--> 2. Data Manipulation: INSERT, UPDATE, DELETE;
+--> 3. Data Control: GRANT, REVOKE;
+--> 4. Transaction Control: COMMIT, ROLLBACK, ENDPOINT;
+--> 5. Data Query: SELECT;
+
+-- CREATE: Used to create database objects like tables, views, or indexes.
+-- ALTER: Modifies the structure of existing database objects.
+-- DROP: Deletes database objects, such as tables or views.
+-- TRUNCATE: Removes all records from a table but retains the table structure.
+
+-- SELECT: Retrieves data from one or more tables.
+-- INSERT: Adds new records into a table.
+-- UPDATE: Modifies existing records in a table.
+-- DELETE: Removes records from a table.
+
+-- GRANT: Provides specific privileges to database users.
+-- REVOKE: Withdraws previously granted privileges.
+
+-- COMMIT: Finalizes a transaction, making all changes permanent.
+-- ROLLBACK: Reverts the database to its state before the beginning of a transaction.
+-- SAVEPOINT: Sets points within transactions to which you can later roll back.
+
+-- SELECT: Primarily used for querying the database to retrieve specific information.
+
+
+
+
+
+
+
