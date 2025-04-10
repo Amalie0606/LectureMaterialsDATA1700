@@ -44,3 +44,11 @@ This is a simple database, Spring boot and simple frontend example of a two enti
 "isDog": true,
 "skills": ["Hunting", "Cuddling", "Heat exchange"]
 }
+
+* How does a database connect to an API application?
+- An API (Application Programming Interface) is the middle layer between your frontend
+ (e.g., a web app or mobile app) and your backend data (often in a database). More closely visual representation:
+
+ [Frontend] → (makes request) → [API] → (queries) → [Database]
+  ↑                           ↓
+  (sends back data in JSON format)
