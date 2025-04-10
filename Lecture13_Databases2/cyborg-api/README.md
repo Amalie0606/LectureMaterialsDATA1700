@@ -52,3 +52,8 @@ This is a simple database, Spring boot and simple frontend example of a two enti
  [Frontend] → (makes request) → [API] → (queries) → [Database]
   ↑                           ↓
   (sends back data in JSON format)
+
+* Possibility to build apps in this way?
+- Yes — if you're building a backend for a mobile or web app
+- You’ll still need something to consume that API (like a frontend or device). 
+  On its own, an API app doesn’t have a user interface.
