@@ -45,7 +45,6 @@ public class HeiController {
 - 1. Singleton Beans (Default)
 - 2. Prototype Beans
 - 3. Request, Session, and Global Session Scope (used in web applications)
-
 */
 
 
