@@ -15,6 +15,6 @@ PLAY
 * Code Combat: https://codecombat.com/play
 * Code Wars: https://www.codewars.com/
 * Screeps: https://screeps.com/
-The SQL murder mystery: https://mystery.knightlab.com/
+* The SQL murder mystery: https://mystery.knightlab.com/
  */
 
