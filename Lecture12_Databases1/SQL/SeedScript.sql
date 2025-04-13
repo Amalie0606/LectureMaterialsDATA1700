@@ -75,6 +75,11 @@ SELECT version();
 
 -- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/ 
 
+/*
+* References: Lecture 12 - Databases 1:
+• MySQL: https://dev.mysql.com/doc/refman/8.4/en/data-types.html
+• PostgreSQL: https://www.postgresql.org/docs/17/datatype.html
+ */
 
 
 
