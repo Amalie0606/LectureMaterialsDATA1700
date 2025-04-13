@@ -24,3 +24,9 @@ VALUES
 -- This second insert fails if "Duplicate Enhancement" already exists
 
 COMMIT;
+
+/*
+* References: Lecture 13 - Databases 2:
+• https://www.tutorialspoint.com/springjdbc/springjdbc_rowmapper.htm
+• https://zetcode.com/spring/beanpropertyrowmapper/
+ */

@@ -49,4 +49,14 @@ public class TreeMapImplementation {
     }
 }
 
-// How To - Tree View W3Schools: https://www.w3schools.com/howto/howto_js_treeview.asp 
+// How To - Tree View W3Schools: https://www.w3schools.com/howto/howto_js_treeview.asp
+
+/*
+* Resources: Lecture 11 - Generic Datatypes and Java Collections:
+• https://www.javatpoint.com/difference-between-abstract-class-and-interface
+• https://docs.oracle.com/javase/10/docs/api/java/util/ArrayDeque.html
+• https://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html
+• https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+• https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+• https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html
+ */
