@@ -35,3 +35,6 @@ console.log(SauronJSONExample);
 console.log(SauronJSONExample.getAliases());
 console.log(JSON.stringify(SauronJSONExample));
 console.log(JSON.parse(JSON.stringify(SauronJSONExample)));
+
+
+// jQuery API: https://api.jquery.com/
