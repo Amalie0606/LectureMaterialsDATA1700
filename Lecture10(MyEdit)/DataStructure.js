@@ -1,6 +1,5 @@
 
-/*
-References: Lecture 10 - Data Structure:
+/* References: Lecture 10 - Data Structure:
 • https://www.slideshare.net/slideshow/data-structure-ppt-138483078/138483078#8
 • https://www.w3resource.com/data-structures-and-algorithms/array/array-data-structure.php
 • https://www.devx.com/terms/array-data-structure/
