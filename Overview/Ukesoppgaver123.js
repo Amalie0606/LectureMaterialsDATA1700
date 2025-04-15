@@ -209,6 +209,8 @@ NODES
 COLLECTIONS
 NODE LISTS
 
+*** For a myriad of examples: https://www.w3schools.com/js/js_examples.asp ***
+
 Source: https://www.w3schools.com/js/default.asp
 
 LINKS
