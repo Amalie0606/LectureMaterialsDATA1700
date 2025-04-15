@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OverviewJS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Overview" target="22" />
+      <module name="OverviewJS" target="22" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
