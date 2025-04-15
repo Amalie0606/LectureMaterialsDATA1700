@@ -95,17 +95,6 @@ SYNTAX
 - All JavaScript identifiers are case-sensitive.
 - NB! Hyphens are not allowed in JavaScript. They are reserved for subtractions (first-name)
 
-COMMENTS
-
-
-
-
-
-
-
-
-
-
 VARIABLES
 LET
 CONST
@@ -175,6 +164,50 @@ BEST PRACTICES
 MISTAKES
 PERFORMANCE
 RESERVED WORDS
+
+* JS Objects *
+DEFINITIONS
+PROTOTYPES
+METHODS
+PROPERTIES
+GET/ SET
+PROTECTION
+
+* JS Functions *
+DEFINITIONS
+PARAMETERS
+INVOCATION
+CALL
+APPLY
+BIND
+CLOSURES
+
+* JS Classes *
+INTRO
+INHERITANCE
+STATIC
+
+* JS Async *
+CALLBACK
+ASYNCHRONOUS
+PROMISES
+ASYNC/AWAIT
+
+* JS HTML DOM *
+INTRO
+METHODS
+DOCUMENT
+ELEMENTS
+HTML
+FORMS
+CSS
+ANIMATIONS
+EVENTS
+EVENT LISTENER
+NAVIGATION
+NODES
+COLLECTIONS
+NODE LISTS
 
 Source: https://www.w3schools.com/js/default.asp
 
