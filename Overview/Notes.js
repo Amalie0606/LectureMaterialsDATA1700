@@ -212,6 +212,9 @@ NODE LISTS
 
 Source: https://www.w3schools.com/js/default.asp
 
+TRANLSTAOR LANGUAGE INTO JS:
+https://anythingtranslate.com/translators/javascript-translator/
+
 LINKS
 * 20 Things JavaScript Developers Should know:
 https://www.youtube.com/playlist?list=PL1PqvM2UQiMoGNTaxFMSK2cih633lpFKP
