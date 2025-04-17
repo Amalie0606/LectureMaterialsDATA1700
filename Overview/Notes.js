@@ -6,6 +6,11 @@
   while Javascript is a dynamically-typed language with a more flexible syntax.
 - JavaScript is a dynamically typed object-oriented scripting language that does not need to be set up or installed,
   unlike Java, because it runs within a computer's browser.
+- Similar to workflow events
+- JavaScript is indeed an object-oriented language, albeit with a unique approach.
+  Its prototypal inheritance, combined with modern ES6 class syntax,
+  supports core OOP principles such as encapsulation, inheritance, polymorphism, and abstraction.
+- Languages such as C, Assembly, Haskell, and SQL are examples of non-OOP languages.
 
 INTRODUCTION
 - JavaScript to program the behavior of web pages, in conjunction with HTML + CSS
