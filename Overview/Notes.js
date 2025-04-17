@@ -95,13 +95,173 @@ SYNTAX
 - NB! Hyphens are not allowed in JavaScript. They are reserved for subtractions (first-name)
 
 VARIABLES
+- Variables are Containers for Storing Data (values)
+- Can be declared in 4 ways: Automatically, Using var, Using let, Using const
+- It is considered good programming practice to always declare variables before use.
+- Example (just switch out with let and const, can also be mixed:
+  var x = 5;
+  var y = 6;
+  var z = x + y;
+
+* When to Use var, let, or const?
+1. Always declare variables
+2. Always use const if the value should not be changed
+3. Always use const if the type should not be changed (Arrays and Objects)
+4. Only use let if you can't use const
+5. Only use var if you MUST support old browsers.
+- Just like in algebra, variables hold values and is used in expressions.
+- variables must be identified with unique names (identifiers)
+- General rules for constructing unique identifiers: must begin with a letter, case-sensitive, no keywords.
+- Equal sign (=) is an "assignment" operator, not an "equal to" operator (not algebra)
+- The "equal to" operator is written like == in JavaScript.
+- Text values are called text strings. Strings are written inside double or single quotes.
+* Declaring a JavaScript Variable:
+  Example:
+   var carName;
+   or:
+   let carName;
+* To assign a value to the variable, use the equal sign:
+  Example:
+  carName = "Volvo";
+  You can also assign a value to the variable when you declare it:
+  let carName = "Volvo";
+
+- We "output" the value inside an HTML paragraph with id="demo":
+  Example
+  <p id="demo"></p>
+
+  <script>
+  let carName = "Volvo";
+  document.getElementById("demo").innerHTML = carName;
+  </script>
+
+- It's a good programming practice to declare all variables at the beginning of a script.
+- You can declare many variables in one statement.
+  Example:
+  let person = "John Doe", carName = "Volvo", price = 200;
+
 LET
+- Variables declared with let:
+- Have Block Scope
+- Must be Declared before use
+- Cannot be Redeclared in the same scope (variables defined with var can be redeclared)
+
 CONST
+- Variables defined with const:
+- cannot be Redeclared
+- cannot be Reassigned
+- have Block Scope
+* Use const when you declare: A new Array, A new Object, A new Function, A new RegExp
+- Const does not define a constant value. It defines a constant reference to a value.
+
 OPERATORS
+- Javascript operators are used to perform different types of mathematical and logical computations.
+- The Assignment Operator = assigns values. Example: let x = 10;
+- The Addition Operator + adds values.
+- The Multiplication Operator * multiplies values.
+- The Comparison Operator > compares values.
+
+* Types of JavaScript Operators:
+- Arithmetic Operators --> used to perform arithmetic on numbers
+- Assignment Operators
+- Comparison Operators
+- String Operators
+- Logical Operators
+- Bitwise Operators
+- Ternary Operators
+- Type Operators
+* Operator --> Description
++ 	Addition
+- 	Subtraction
+* 	Multiplication
+** 	Exponentiation (ES2016)
+/ 	Division
+% 	Modulus (Division Remainder)
+++ 	Increment
+-- 	Decrement
+
+* Assignment operators assign values to JavaScript variables.
+- The Addition Assignment Operator (+=) adds a value to a variable.
+* JavaScript Comparison Operators
+Operator --> Description
+== 	equal to
+=== equal value and equal type
+!= 	not equal
+!== not equal value or not equal type
+> 	greater than
+< 	less than
+>= 	greater than or equal to
+<= 	less than or equal to
+? 	ternary operator
+
+* JavaScript String Comparison
+  Example:
+  let text1 = "A";
+  let text2 = "B";
+  let result = text1 < text2;
+
+* JavaScript Logical Operators
+- Operator --> Description
+&& 	logical and
+|| 	logical or
+! 	logical not
+
+* JavaScript Type Operators
+Operator --> Description
+typeof 	Returns the variable type
+instanceof 	Returns true if an object is an instance of an object type
+
 ARITHMETIC
+- Operator Precedence:
+- Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+- And (as in school mathematics) the precedence can be changed by using parentheses.
+- When using parentheses, the operations inside the parentheses are computed first.
+- When many operations have the same precedence (like addition and subtraction or multiplication and division),
+  they are computed from left to right.
+
 ASSIGNMENT
+- The = Operator: The Simple Assignment Operator assigns a value to a variable.
+- The += Operator: The Addition Assignment Operator adds a value to a variable.
+- The -= Operator: The Subtraction Assignment Operator subtracts a value from a variable.
+- The *= Operator: The Multiplication Assignment Operator multiplies a variable.
+- The **= Operator: The Exponentiation Assignment Operator raises a variable to the power of the operand.
+- The /= Operator: The Division Assignment Operator divides a variable.
+- The %= Operator: The Remainder Assignment Operator assigns a remainder to a variable.
+- The <<= Operator: The Left Shift Assignment Operator left shifts a variable.
+- The >>= Operator: The Right Shift Assignment Operator right shifts a variable (signed).
+- The >>>= Operator: The Unsigned Right Shift Assignment Operator right shifts a variable (unsigned).
+- The &= Operator: The Bitwise AND Assignment Operator does a bitwise AND operation on two operands and assigns the result to the variable.
+- The |= Operator: The Bitwise OR Assignment Operator does a bitwise OR operation on two operands and assigns the result to the variable.
+- The ^= Operator: The Bitwise XOR Assignment Operator does a bitwise XOR operation on two operands and assigns the result to the variable.
+- The &&= Operator: The Logical AND assignment operator is used between two values. If the first value is true, the second value is assigned.
+- The ||= Operator: The Logical OR assignment operator is used between two values. If the first value is false, the second value is assigned.
+- The ??= Operator: The Nullish coalescing assignment operator we used between two values. If the first value is undefined or null, the second value is assigned.
+
 DATA TYPES
+* JavaScript has 8 Datatypes: String, Number, Bigint, Boolean, Undefined, Null, Symbol, Object, The Object Datatype
+- The object data type can contain both built-in objects, and user defined objects:
+- Built-in object types can be: objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
+- A JavaScript variable can hold any type of data.
+- JavaScript evaluates expressions from left to right. Different sequences can produce different results.
+- JavaScript Types are Dynamic. This means that the same variable can be used to hold different data types.
+* JavaScript Strings are written with quotes. You can use single or double quotes.
+* JavaScript Booleans can only have two values: true or false.
+* JavaScript Arrays are written with square brackets. Array items are separated by commas.
+* JavaScript Objects are written with curly braces {}.
+- Object properties we write as name:value pairs, separated by commas.
+* The typeof Operator we use to find the JavaScript variable type.
+- The typeof operator returns the variable type or an expression.
+
 FUNCTIONS
+
+
+
+
+
+
+
+
+
 OBJECTS
 OBJECT PROPERTIES
 OBJECT METHODS
