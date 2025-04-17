@@ -1,6 +1,12 @@
 
 /* --------------------------------------- OVERVIEW ---------------------------------------------------
                                        Exam date: 22 May
+
+- Java is a statically-typed language with rigid syntax,
+  while Javascript is a dynamically-typed language with a more flexible syntax.
+- JavaScript is a dynamically typed object-oriented scripting language that does not need to be set up or installed,
+  unlike Java, because it runs within a computer's browser.
+
 INTRODUCTION
 - JavaScript to program the behavior of web pages, in conjunction with HTML + CSS
 - Web programming language: can update and change HTML, CSS, calculate, manipulate and validate data.
