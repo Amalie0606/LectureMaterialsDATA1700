@@ -12,6 +12,46 @@
   supports core OOP principles such as encapsulation, inheritance, polymorphism, and abstraction.
 - Languages such as C, Assembly, Haskell, and SQL are examples of non-OOP languages.
 
+- Size of the Language: In terms of language size, JavaScript has a relatively small core syntax
+ compared to some other languages. However, its capabilities expand significantly
+ through the use of libraries and frameworks.
+* A library is a collection of pre-written code that you can call upon when needed.
+ You are in control, and you decide when and how to use the library.
+- Example: jQuery is a popular JavaScript library.
+- Download: //jquery.com/download/
+- About: https://api.jquery.com/
+
+* A framework is a larger structure where the framework is in control,
+  and you fill in the parts specific to your application. It often sets the architecture and flow.
+  Example: React, Angular, and Vue.js are frameworks (React is technically a library - functions like a framework).
+- In a framework: The framework calls your code (not the other way around).
+- It usually comes with structure, patterns, and rules to follow.
+- You don’t just write everything from scratch — you work within the structure the framework gives you.
+* Bootstrap is a popular CSS framework used to build responsive and mobile-first websites.
+  It helps you style your site with: Layouts (grids, columns), Buttons, Forms, Modals, Navbars
+- It also includes some JavaScript components (like dropdowns, modals, tooltips).
+
+* Decision Guide:
+- Need to style and lay out pages fast? → Bootstrap
+- Need to fetch data, animate elements, handle custom events? → jQuery
+- Need both UI components and custom scripting? →
+  You can—and often do—use Bootstrap + jQuery together
+* Bottom line:
+- jQuery = your go‑to when you want to program dynamic behavior.
+- Bootstrap = your go‑to when you want a ready‑made look and feel.
+- They’re complementary rather than interchangeable.
+  Choose based on whether your priority is behavior (jQuery) or presentation (Bootstrap).
+
+* In modern development, it’s considered better practice to keep HTML, CSS, and JavaScript
+  separate for these reasons: Cleaner code, Easier to maintain, Better separation of concerns
+- In HTML refer like this: <script src="filename.js"></
+- This waits until the page is fully loaded before running the script. script>
+* Best Practices:
+- 1. Place <script src="..."> at the end of <body>
+- So the HTML elements are already loaded before the script runs.
+- 2. Or, if placing it in the <head>, use the defer attribute: <script src="script.js" defer></script>
+- This waits until the page is fully loaded before running the script.
+
 INTRODUCTION
 - JavaScript to program the behavior of web pages, in conjunction with HTML + CSS
 - Web programming language: can update and change HTML, CSS, calculate, manipulate and validate data.
@@ -450,20 +490,6 @@ OBJECT CONSTRUCTORS (NOT FINISHED)
 - new Date() --> A new Date object
 - new RegExp() --> A new RegExp object
 - new Function() --> A new Function object
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 EVENTS
 STRINGS
