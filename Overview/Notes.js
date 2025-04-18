@@ -13,7 +13,7 @@
 - Explaining how to maintain state using sessions and cookies
 - Explain the purpose with and functioning of generic data types
 * Skills:
-- Developing dynamic web pages t by maintaining high-level user-friendliness and accessibility
+- Developing dynamic web pages by maintaining high-level user-friendliness and accessibility
 - Linking dynamic web pages to a relational database
 - Utilise Java Collections
 - Understanding the functioning and use of recursion
@@ -21,6 +21,7 @@
 - Developing object-oriented program structures in a web architecture
 - Developing an extensive dynamic website with persistent data storage
 --------------------------------------------------------------------------------------------------------
+* ABOUT JAVASCRIPT LANGUAGE, LIBRARIES AND FRAMEWORKS
 - Java is a statically-typed language with rigid syntax,
   while Javascript is a dynamically-typed language with a more flexible syntax.
 - JavaScript is a dynamically typed object-oriented scripting language that does not need to be set up or installed,
@@ -30,17 +31,19 @@
   Its prototypal inheritance, combined with modern ES6 class syntax,
   supports core OOP principles such as encapsulation, inheritance, polymorphism, and abstraction.
 - Languages such as C, Assembly, Haskell, and SQL are examples of non-OOP languages.
-
-- Size of the Language: In terms of language size, JavaScript has a relatively small core syntax
+* Size of the Language: In terms of language size, JavaScript has a relatively small core syntax
  compared to some other languages. However, its capabilities expand significantly
  through the use of libraries and frameworks.
-* A library is a collection of pre-written code that you can call upon when needed.
+
+* LIBRARY
+- A library is a collection of pre-written code that you can call upon when needed.
  You are in control, and you decide when and how to use the library.
 - Example: jQuery is a popular JavaScript library.
 - Download: //jquery.com/download/
 - About: https://api.jquery.com/
 
-* A framework is a larger structure where the framework is in control,
+* FRAMEWORK
+- A framework is a larger structure where the framework is in control,
   and you fill in the parts specific to your application. It often sets the architecture and flow.
   Example: React, Angular, and Vue.js are frameworks (React is technically a library - functions like a framework).
 - In a framework: The framework calls your code (not the other way around).
@@ -61,6 +64,7 @@
 - They’re complementary rather than interchangeable.
   Choose based on whether your priority is behavior (jQuery) or presentation (Bootstrap).
 
+WHERE TO BEST PRACTICE
 * In modern development, it’s considered better practice to keep HTML, CSS, and JavaScript
   separate for these reasons: Cleaner code, Easier to maintain, Better separation of concerns
 - In HTML refer like this: <script src="filename.js"></
@@ -71,7 +75,7 @@
 - 2. Or, if placing it in the <head>, use the defer attribute: <script src="script.js" defer></script>
 - This waits until the page is fully loaded before running the script.
 
-INTRODUCTION
+INTRODUCTION (W3Schools)
 - JavaScript to program the behavior of web pages, in conjunction with HTML + CSS
 - Web programming language: can update and change HTML, CSS, calculate, manipulate and validate data.
 * Change HTML Content: JS HTML method getElementById().
