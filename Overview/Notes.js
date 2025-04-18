@@ -264,16 +264,143 @@ DATA TYPES
 - The typeof operator returns the variable type or an expression.
 
 FUNCTIONS
+* A JavaScript function is a block of code designed to perform a particular task.
+- The function is executed when "something" invokes it (calls it).
+  Example
+  // Function to compute the product of p1 and p2
+  function myFunction(p1, p2) {
+  return p1 * p2;
+  }
 
-
-
-
-
-
-
-
+* Syntax: function is defined with the function keyword, followed by a name, followed by parentheses ().
+- Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+- The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...)
+- The code to be executed, by the function, is placed inside curly brackets: {}
+- Function parameters are listed inside the parentheses () in the function definition.
+- Function arguments are the values received by the function when it is invoked.
+- Inside the function, the arguments (the parameters) behave as local variables.
+* Function Invocation: The code inside the function will execute when "something" invokes (calls) the function:
+- When an event occurs (when a user clicks a button)
+- When it is invoked (called) from JavaScript code
+- Automatically (self invoked)
+* Function Return: When JavaScript reaches a return statement, the function will stop executing.
+- If THE function was invoked from a statement, JavaScript will "return"
+  to execute the code after the invoking statement.
+- Functions often compute a return value. The return value is "returned" back to the "caller":
+- With functions you can reuse code.
+- You can write code that can be used many times.
+- You can use the same code with different arguments, to produce different results.
+* The () Operator: The () operator invokes (calls) the function.
+* Functions Used as Variable Values: Functions can be used the same way as you use variables,
+  in all types of formulas, assignments, and calculations.
+* Local variables: Variables declared within a JavaScript function, become LOCAL to the function.
+- Local variables can only be accessed from within the function.
 
 OBJECTS
+- Objects (dog) have Properties (values) (Example: dog.color = blackAndTan) and Methods (Example: dog.run()).
+* JavaScript variables are containers for data values.
+
+- This code assigns a simple value (dachshund) to a variable named dog:
+  Example
+  let dog = "Dachshund";
+* JavaScript Objects: are variables too. But objects can contain many values.
+- It is a common practice to declare objects with the const keyword.
+- This code assigns many values (Dachshund, short, clownish) to an object named dog:
+  Example
+  const dog = {type:"Dachshund", legs:"short", personality:"clownish"};
+
+* Define a JavaScript Object:
+- Using an Object Literal
+- Using the new Keyword
+- Using an Object Constructor
+- Object Literal: An object literal is a list of name:value pairs inside curly braces {}.
+  Example: {firstName:"Selda", lastName:"Hobbit", age:3, eyeColor:"brown"}
+- Name:value pairs are also called key:value pairs.
+- Object literals are also called object initializers.
+* Creating a JavaScript Object (4 properties):
+  Example: const dog = {firstName:"Selda", lastName:"Hobbit", age:3, eyeColor:"brown"};
+- Spaces and line breaks are not important. An object initializer can span multiple lines.
+* Using the new Keyword: new Object()
+  Example:
+  // Create an Object
+  const dog = new Object();
+
+  // Add Properties
+  dog.firstName = "Selda";
+  dog.lastName = "Hobbit";
+  dog.age = 3;
+  dog.eyeColor = "brown";
+
+* Object Properties: The named values, in JavaScript objects, are called properties.
+* Accessing Object Properties in 2 ways:
+- objectName.propertyName
+- objectName["propertyName"]
+  Example: dog.lastName; OR person["lastName"];
+
+* JavaScript Object Methods: are actions that can be performed on objects.
+- Methods are function definitions stored as property values.
+- Property --> Property Value
+- firstName -->	Selda
+- lastName --> Hobbit
+- age --> 3
+- eyeColor --> brown
+- fullName --> function() {return this.firstName + " " + this.lastName;}
+  Example:
+  const dog = {
+  firstName: "Selda",
+  lastName : "Hobbit",
+  id       : 2310,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+- In the above example this refers to the dog object.
+- this.firstName --> firstName property of dog.
+- this.lastName --> lastName property of dog
+- Objects are containers for Properties and Methods.
+- Properties are named Values.
+- Methods are Functions stored as Properties.
+- Properties can be primitive values, functions, or even other objects.
+
+* Objects are *King* In JavaScript, almost "everything" is an object:
+- Objects are objects
+- Maths are objects
+- Functions are objects
+- Dates are objects
+- Arrays are objects
+- Maps are objects
+- Sets are objects
+- All JavaScript values, except primitives, are objects.
+* JavaScript Primitives: A primitive value is a value that has no properties or methods.
+- A primitive data type is data that has a primitive value.
+- JavaScript defines 7 types of primitive data types: string, number, boolean, null, undefined, symbol, bigint
+- Primitive values are immutable (they are hardcoded and cannot be changed).
+- JavaScript Objects are mutable: They are addressed by reference, not by value.
+  Example: const x = person;
+- The object x is not a copy of person. The object x is person.
+- The object x and the object person share the same memory address.
+- Any changes to x will also change person:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 OBJECT PROPERTIES
 OBJECT METHODS
 OBJECT DISPLAY
