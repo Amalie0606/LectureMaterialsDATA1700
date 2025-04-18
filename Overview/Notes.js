@@ -382,6 +382,74 @@ OBJECTS
 - The object x and the object person share the same memory address.
 - Any changes to x will also change person:
 
+OBJECT PROPERTIES (NOT FINISHED)
+- An Object is an Unordered Collection of Properties
+- Properties are the most important part of JavaScript objects.
+- Properties can be changed, added, deleted, and some are read only.
+* Accessing JavaScript Properties:
+* Adding New Properties:
+* Deleting Properties:
+* Nested Objects:
+
+*** Complete JavaScript Object Methods and Properties ***
+- Name --> Description
+- assign() --> Copies properties from a source object to a target object
+- constructor --> Returns the function that created an object's prototype
+- create() --> Returns an object created from an existing object
+- defineProperties() --> Adds or changes properties
+- defineProperty() --> Adds or changes a property
+- entries() --> Returns an array of the key/value pairs of an object
+- freeze() --> Prevents any changes to an object
+- fromEntries() --> Returns an object created from an iterable list of key/value pairs
+- getOwnPropertyDescriptor() --> Returns an array of the keys of an object
+- getOwnPropertyDescriptors() --> Returns an array of the keys of an object
+- getOwnPropertyNames() --> Returns an array of the keys of an object
+- groupBy() --> Groups object elements according to returned callback values
+- isExtensible() --> Returns true if an object is extensible
+- isFrozen() --> Returns true if an object is frozen
+- isSealed() --> Returns true if an object is sealed
+- keys() --> Returns an array of the keys of an object
+- preventExtensions() --> Prevents adding new properties to an object
+- prototype --> Let you to add properties and methods to JavaScript objects
+- seal() --> Prevents adding new or deleting existing object properties
+- toString() --> Converts an object to a string and returns the result
+- valueOf() --> Returns the primitive value of an object
+- values() --> Returns an array of the property values of an object
+
+OBJECT METHODS (NOT FINISHED)
+- Object methods are actions that can be performed on objects.
+- A method is a function definition stored as a property value.
+* Accessing Object Methods:
+* Adding a Method to an Object:
+* Using JavaScript Methods:
+
+OBJECT DISPLAY (NOT FINISHED)
+- Displaying a JavaScript object will output [object Object].
+* Displaying Object Properties:
+* Displaying Properties in a Loop:
+* Using Object.values():
+* Using Object.entries():
+* Using JSON.stringify():
+
+OBJECT CONSTRUCTORS (NOT FINISHED)
+* Object Constructor Functions:
+- Sometimes we need to create many objects of the same type.
+- To create an object type we use an object constructor function.
+- It is considered good practice to name constructor functions with an upper-case first letter.
+* Property Default Values:
+* Adding a Property to an Object:
+* Adding a Property to a Constructor:
+* Constructor Function Methods:
+* Adding a Method to an Object:
+* Adding a Method to a Constructor:
+* Built-in JavaScript Constructors: for all native objects:
+- new Object() --> A new Object object
+- new Array() --> A new Array object
+- new Map() --> A new Map object
+- new Set() --> A new Set object
+- new Date() --> A new Date object
+- new RegExp() --> A new RegExp object
+- new Function() --> A new Function object
 
 
 
@@ -397,14 +465,6 @@ OBJECTS
 
 
 
-
-
-
-
-OBJECT PROPERTIES
-OBJECT METHODS
-OBJECT DISPLAY
-OBJECT CONSTRUCTORS
 EVENTS
 STRINGS
 STRING METHODS
