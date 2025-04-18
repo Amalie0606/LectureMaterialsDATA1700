@@ -1,7 +1,26 @@
 
 /* --------------------------------------- OVERVIEW ---------------------------------------------------
                                        Exam date: 22 May
+                                    DATA1700 Learning outcomes
 
+- Acquire basic knowledge of web servers and develop skills
+- Develop insight into full-stack web programming
+- Develop skills in and insight into the programming of dynamic web pages that communicate with a database
+- Gain knowledge of information security in web design
+* Knowledge:
+- Explaining the principles behind web architecture and client/server architecture
+- Explaining different security challenges and how they are dealt with
+- Explaining how to maintain state using sessions and cookies
+- Explain the purpose with and functioning of generic data types
+* Skills:
+- Developing dynamic web pages t by maintaining high-level user-friendliness and accessibility
+- Linking dynamic web pages to a relational database
+- Utilise Java Collections
+- Understanding the functioning and use of recursion
+* General competence
+- Developing object-oriented program structures in a web architecture
+- Developing an extensive dynamic website with persistent data storage
+--------------------------------------------------------------------------------------------------------
 - Java is a statically-typed language with rigid syntax,
   while Javascript is a dynamically-typed language with a more flexible syntax.
 - JavaScript is a dynamically typed object-oriented scripting language that does not need to be set up or installed,
