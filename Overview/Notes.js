@@ -827,16 +827,26 @@ MISTAKES
 PERFORMANCE
 RESERVED WORDS
 
-* JS Objects *
+* JS Objects * (NOT FINISHED)
 DEFINITIONS
+* Methods for Defining JavaScript Objects
+- Using an Object Literal
+- Using the new Keyword
+- Using an Object Constructor
+- Using Object.assign()
+- Using Object.create()
+- Using Object.fromEntries()
+
 PROTOTYPES
 METHODS
 PROPERTIES
 GET/ SET
 PROTECTION
 
-* JS Functions *
+* JS Functions * (NOT FINISHED)
 DEFINITIONS
+- JavaScript functions are defined with the function keyword. Use a function declaration or a function expression.
+
 PARAMETERS
 INVOCATION
 CALL
@@ -844,13 +854,20 @@ APPLY
 BIND
 CLOSURES
 
-* JS Classes *
+* JS Classes * (NOT FINISHED)
 INTRO
+- Syntax: Use the keyword class to create a class. Always add a method named constructor():
+- A JavaScript class is not an object. It is a template for JavaScript objects.
+
 INHERITANCE
 STATIC
 
-* JS Async *
-CALLBACK
+* JS Async * (NOT FINISHED)
+* CALLBACK
+- A callback is a function passed as an argument to another function
+- This technique allows a function to call another function
+- A callback function can run after another function has finished
+
 ASYNCHRONOUS
 PROMISES
 ASYNC/AWAIT
