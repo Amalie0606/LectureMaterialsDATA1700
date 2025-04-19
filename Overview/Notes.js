@@ -779,13 +779,6 @@ NUMBER METHODS (NOT FINISHED)
 - valueOf() --> Returns a number as a number
 
 NUMBER PROPERTIES
-
-
-
-
-
-
-
 ARRAYS
 ARRAY METHODS
 ARRAY SEARCH
@@ -862,8 +855,42 @@ ASYNCHRONOUS
 PROMISES
 ASYNC/AWAIT
 
-* JS HTML DOM *
+* JS HTML DOM (Document Object Model) *
 INTRO
+- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+- When a web page is loaded, the browser creates a Document Object Model of the page.
+- The HTML DOM model is constructed as a tree of Objects:
+                              Document
+                            Root element:
+                               <HTML>
+           Element:                                   Element
+            <head>                                     <body>
+               --------------------------------------------
+           Element:       Attribute: ---- Element:      Element:
+            <title>         "href"         <a>           <h1>
+
+            Text:                         Text:           Text
+           "My text"                     "my link"      "my header"
+
+* With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+- JavaScript can change all the HTML elements in the page
+- JavaScript can change all the HTML attributes in the page
+- JavaScript can change all the CSS styles in the page
+- JavaScript can remove existing HTML elements and attributes
+- JavaScript can add new HTML elements and attributes
+- JavaScript can react to all existing HTML events in the page
+- JavaScript can create new HTML events in the page
+* The DOM defines a standard for accessing documents, separated in 3 parts:
+- Core DOM - standard model for all document types
+- XML DOM - standard model for XML documents
+- HTML DOM - standard model for HTML documents
+* The HTML DOM is a standard object model and programming interface for HTML. It defines:
+- The HTML elements as objects
+- The properties of all HTML elements
+- The methods to access all HTML elements
+- The events for all HTML elements
+- In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
 METHODS
 DOCUMENT
 ELEMENTS
