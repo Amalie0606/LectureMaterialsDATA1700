@@ -7,19 +7,143 @@
 - Develop insight into full-stack web programming
 - Develop skills in and insight into the programming of dynamic web pages that communicate with a database
 - Gain knowledge of information security in web design
-* Knowledge:
-- Explaining the principles behind web architecture and client/server architecture
-- Explaining different security challenges and how they are dealt with
-- Explaining how to maintain state using sessions and cookies
-- Explain the purpose with and functioning of generic data types
-* Skills:
-- Developing dynamic web pages by maintaining high-level user-friendliness and accessibility
-- Linking dynamic web pages to a relational database
-- Utilise Java Collections
-- Understanding the functioning and use of recursion
-* General competence
-- Developing object-oriented program structures in a web architecture
-- Developing an extensive dynamic website with persistent data storage
+
+* 1. Knowledge:
+1.1 Explaining the principles behind web architecture and client/server architecture
+1.2 Explaining different security challenges and how they are dealt with
+1.3 Explaining how to maintain state using sessions and cookies
+1.4 Explain the purpose with and functioning of generic data types
+* 2. Skills:
+2.1 Developing dynamic web pages by maintaining high-level user-friendliness and accessibility
+2.2 Linking dynamic web pages to a relational database
+2.3 Utilise Java Collections
+2.4 Understanding the functioning and use of recursion
+* 3 General competence
+3.1 Developing object-oriented program structures in a web architecture
+3.2 Developing an extensive dynamic website with persistent data storage
+
+TENTATIVE SUGGESTIONS
+1. Knowledge:
+1.1 Principles behind Web Architecture & Client–Server Architecture:
+* Client–Server model:
+- Clients (browsers, mobile apps) send HTTP(S) requests.
+- Servers receive requests, process them (e.g. run business logic, query databases),
+  and return responses (HTML, JSON, files).
+* Multi‑tier/Web architecture:
+- Presentation tier (UI in browser)
+- Application tier (web server, application logic)
+- Data tier (relational/NoSQL database)
+- Statelessness of HTTP: each request is independent; state must be managed explicitly
+  (see sessions/cookies below).
+* REST principles (often used in modern web APIs): resources identified by URLs,
+  uniform interface (GET/POST/PUT/DELETE), stateless interactions.
+
+1.2. Security Challenges & Mitigations:
+* Cross‑Site Scripting (XSS)
+- Risk: attacker injects malicious scripts into pages viewed by other users.
+- Mitigation: always escape or sanitize user‑supplied data before inserting into the DOM;
+  use Content Security Policy (CSP).
+* SQL Injection
+- Risk: attacker crafts input that alters your SQL queries.
+- Mitigation: use parameterized queries (prepared statements) or ORM frameworks.
+* Cross‑Site Request Forgery (CSRF)
+- Risk: attacker tricks a logged‑in user’s browser into submitting unwanted requests.
+- Mitigation: include anti‑CSRF tokens in forms, require same‑site cookies, check Origin/Referer headers.
+* Insecure Direct Object References (IDOR)
+- Risk: users access data they shouldn’t by tweaking identifiers in URLs.
+- Mitigation: enforce authorization checks on every request.
+* Secure Transport
+- Always use HTTPS to protect data in transit and set Strict-Transport-Security.
+
+1.3. Maintaining State with Sessions & Cookies
+* Cookies
+- Small key–value pairs stored by browser, sent automatically on each request to matching domain/path.
+- Use flags: HttpOnly (not accessible to JavaScript), Secure (HTTPS only), SameSite (CSRF protection).
+* Sessions
+- Server generates a unique session ID and stores associated state (e.g. user ID, cart contents) in memory,
+  database, or cache.
+- Client receives only the session ID in a cookie; server trusts its own store.
+* Flow
+- 1. User logs in → server creates session, sets Set-Cookie: JSESSIONID=XYZ.
+- 2. Browser sends Cookie: JSESSIONID=XYZ on subsequent requests.
+- 3. Server retrieves session data via that ID.
+
+1.4. Purpose & Functioning of Generic Data Types
+* Generics (in Java) enable you to write classes/methods that operate on types specified at use‑time, providing:
+- Compile‑time type safety (no need for casts)
+- Reusability (one implementation works for many types)
+  Example:
+  // A generic Box class
+  public class Box<T> {
+  private T value;
+  public void set(T v) { value = v; }
+  public T get() { return value; }
+  }
+
+  Box<String> nameBox = new Box<>();
+  nameBox.set("Alice");        // only Strings allowed
+  String name = nameBox.get(); // no cast needed
+
+2. Skills:
+2. 1. Developing Dynamic Web Pages with User‑Friendliness & Accessibility
+* Dynamic content via server‑side templates (JSP, Thymeleaf) or client‑side JS (jQuery, React).
+* Accessibility (a11y):
+- Use semantic HTML (<header>, <nav>, <main>, <button>).
+- Provide alt text on images, labels for form controls.
+- Ensure keyboard navigation and appropriate ARIA roles if needed.
+* Progressive enhancement: ensure core functionality works without JS, then enhance.
+
+2. 2. Linking Dynamic Pages to a Relational Database
+- JDBC (Java Database Connectivity) for direct SQL:
+  Connection conn = DriverManager.getConnection(url, user, pass);
+  PreparedStatement ps = conn.prepareStatement
+  ("SELECT * FROM users WHERE id = ?");
+  ps.setInt(1, userId);
+  ResultSet rs = ps.executeQuery();
+
+* ORM frameworks (Hibernate, JPA) to map Java objects to database tables and manage queries
+ via entity classes and repositories.
+
+2. 3. Utilizing Java Collections
+- Key interfaces: List, Set, Map, Queue.
+  Examples:
+  List<String> names = new ArrayList<>();
+  names.add("Alice");
+  Set<Integer> ids = new HashSet<>(Arrays.asList(1,2,3));
+  Map<String, User> lookup = new HashMap<>();
+  lookup.put("alice", new User(...));
+
+- Choose impl based on need (e.g. LinkedList for frequent inserts, ArrayList for random access).
+
+2. 4. Understanding Recursion
+* Definition: a method that calls itself with a smaller problem until a base case.
+  Example (factorial):
+  public int factorial(int n) {
+  if (n <= 1) return 1; // base case
+  return n * factorial(n - 1); // recursive step
+  }
+
+- Use cases: tree traversal, divide‑and‑conquer algorithms (quick‑sort, merge‑sort), graph searches (DFS).
+
+3. General Competence
+3. 1. Developing Object‑Oriented Program Structures in a Web Architecture
+* MVC pattern:
+- Model: domain/data objects (e.g. User, Product).
+- View: templates or components that render HTML/JS.
+- Controller: handles HTTP requests, updates model, selects view.
+* Layering:
+- Controller layer (Spring MVC controllers)
+- Service layer (business logic)
+- Repository/DAO layer (data access)
+
+3. 2. Developing an Extensive Dynamic Website with Persistent Data Storage
+* Combine all above:
+- Use a framework (e.g. Spring Boot) to wire MVC, DI, security.
+- Store state in a relational database (MySQL, PostgreSQL), accessed via JPA/Hibernate.
+- Manage user sessions for login flows.
+- Serve dynamic pages that adapt to user roles, data in database.
+- Implement caching, pagination, search, and ensure accessibility and performance optimizations.
+
 --------------------------------------------------------------------------------------------------------
 * ABOUT JAVASCRIPT LANGUAGE, LIBRARIES AND FRAMEWORKS
 - Java is a statically-typed language with rigid syntax,
