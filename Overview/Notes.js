@@ -18,7 +18,7 @@
 2.2 Linking dynamic web pages to a relational database
 2.3 Utilise Java Collections
 2.4 Understanding the functioning and use of recursion
-* 3 General competence
+* 3 General competence:
 3.1 Developing object-oriented program structures in a web architecture
 3.2 Developing an extensive dynamic website with persistent data storage
 
@@ -125,7 +125,7 @@ TENTATIVE SUGGESTIONS
 
 - Use cases: tree traversal, divide‑and‑conquer algorithms (quick‑sort, merge‑sort), graph searches (DFS).
 
-3. General Competence
+3. General Competence:
 3. 1. Developing Object‑Oriented Program Structures in a Web Architecture
 * MVC pattern:
 - Model: domain/data objects (e.g. User, Product).
@@ -143,6 +143,41 @@ TENTATIVE SUGGESTIONS
 - Manage user sessions for login flows.
 - Serve dynamic pages that adapt to user roles, data in database.
 - Implement caching, pagination, search, and ensure accessibility and performance optimizations.
+
+* Tasks That Require an Internet Connection (to actually run or test):
+* Developing Dynamic Web Pages
+- If you’re using client-side libraries like React or jQuery, setting up or running them
+  typically involves downloading from CDNs or npm/yarn — which needs internet.
+- Also, loading external fonts, APIs, or accessibility validation tools may require online resources.
+* Linking to a Relational Database
+- JDBC and ORM frameworks require:
+- A running database server (MySQL/PostgreSQL).
+- Network access if hosted remotely.
+- Internet access for pulling drivers, updating dependencies, or using online ORMs
+  (e.g. Spring Data JPA with Maven/Gradle) if not cached locally.
+* Developing an Extensive Dynamic Website
+- To deploy or test a complete site, you’d need:
+- Internet (or intranet) access to databases, auth providers, and external services
+  (e.g. payment gateways, Google APIs).
+- Online frameworks, security libraries, or asset delivery (e.g. Bootstrap, Vue/React, JS libraries).
+
+* Tasks that can be done without internet:
+* 1.1 Web Architecture
+- All conceptual. Understanding tiers, REST, and statelessness requires no connectivity.
+* 1.2 Security Challenges
+- You can explain and write defenses for XSS, CSRF, SQLi, etc., without running code
+  or needing access to external services.
+* 1.3 Sessions & Cookies
+- Understanding the flow and implementation is offline-friendly.
+  You don’t need to hit a server to describe how cookies/session IDs work.
+* 1.4 Generics
+- Fully offline — generics and type safety are built into the language and compiler.
+* 2.3 Java Collections
+You can implement, test, and reason about List, Set, Map, etc., offline — no dependency on external tools.
+* 2.4 Recursion
+- 100% local/mental problem-solving. You can trace and implement recursive algorithms on paper or in an IDE.
+* 3.1 MVC + OOP in Web Context
+- You can sketch out MVC structure and class responsibilities without needing to run a server.
 
 --------------------------------------------------------------------------------------------------------
 * ABOUT JAVASCRIPT LANGUAGE, LIBRARIES AND FRAMEWORKS
