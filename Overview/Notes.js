@@ -173,7 +173,7 @@ TENTATIVE SUGGESTIONS
 * 1.4 Generics
 - Fully offline — generics and type safety are built into the language and compiler.
 * 2.3 Java Collections
-You can implement, test, and reason about List, Set, Map, etc., offline — no dependency on external tools.
+- You can implement, test, and reason about List, Set, Map, etc., offline — no dependency on external tools.
 * 2.4 Recursion
 - 100% local/mental problem-solving. You can trace and implement recursive algorithms on paper or in an IDE.
 * 3.1 MVC + OOP in Web Context
@@ -674,14 +674,118 @@ OBJECT CONSTRUCTORS (NOT FINISHED)
 - new Function() --> A new Function object
 
 EVENTS
+* HTML events are "things" that happen to HTML elements.
+- When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+- Here are some examples of HTML events:
+- An HTML web page has finished loading
+- An HTML input field was changed
+- An HTML button was clicked
+- JavaScript lets you execute code when events are detected.
+- HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+  Example: <element event='some JavaScript'>
+- In the following example, an onclick attribute (with code), is added to a <button> element:
+  Example: <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+- In the example above, the JavaScript code changes the content of the element with id="demo".
+- In the next example, the code changes the content of its own element (using this.innerHTML):
+  Example: <button onclick="this.innerHTML = Date()">The time is?</button>
+* Common HTML Events:
+- Event --> Description
+- onchange --> An HTML element has been changed
+- onclick --> The user clicks an HTML element
+- onmouseover --> The user moves the mouse over an HTML element
+- onmouseout --> The user moves the mouse away from an HTML element
+- onkeydown --> The user pushes a keyboard key
+- onload --> The browser has finished loading the page
+- The list is much longer: W3Schools JavaScript Reference HTML DOM Events
+* JavaScript Event Handlers
+- Event handlers can be used to handle and verify user input, user actions, and browser actions:
+- Things that should be done every time a page loads
+- Things that should be done when the page is closed
+- Action that should be performed when a user clicks a button
+- Content that should be verified when a user inputs data
+* Many different methods can be used to let JavaScript work with events:
+- HTML event attributes can execute JavaScript code directly
+- HTML event attributes can call JavaScript functions
+- You can assign your own event handler functions to HTML elements
+- You can prevent events from being sent or being handled
+
 STRINGS
-STRING METHODS
-STRING SEARCH
+- Strings are for storing text, written with quotes.
+  Example
+  let text = "John Doe";
+- Do not create String objects. The new keyword complicates the code and slows down execution speed.
+  String objects can produce unexpected results:
+
+STRING METHODS (NOT FINISHED)
+* Basic String Methods
+- Javascript strings are primitive and immutable:
+  All string methods produce a new string without altering the original string.
+- String length
+- String charAt()
+- String charCodeAt()
+- String at()
+- String [ ]
+- String slice()
+- String substring()
+- String substr()
+- (String Search Methods,String Templates)
+- String toUpperCase()
+- String toLowerCase()
+- String concat()
+- String trim()
+- String trimStart()
+- String trimEnd()
+- String padStart()
+- String padEnd()
+- String repeat()
+- String replace()
+- String replaceAll()
+- String split()
+- For a complete String reference: https://www.w3schools.com/jsref/jsref_obj_string.asp
+  The reference contains descriptions and examples of all string properties and methods.
+
+STRING SEARCH (NOT FINISHED)
+* String Search Methods
+- String indexOf()
+- String lastIndexOf()
+- String search()
+- String match()
+- String matchAll()
+- String includes()
+- String startsWith()
+- String endsWith()
+
 STRING TEMPLATES
+
 NUMBERS
+- JavaScript has only one type of number. Numbers can be written with or without decimals.
+- JavaScript uses the + operator for both addition and concatenation. Numbers are added. Strings are concatenated.
+- Do not create Number objects. The new keyword complicates the code and slows down execution speed.
+
 BIGINT
-NUMBER METHODS
+- JavaScript BigInt variables are used to store big integer values
+  that are too big to be represented by a normal JavaScript Number.
+- BigInt is the second numeric data type in JavaScript (after Number).
+- With BigInt the total number of supported data types in JavaScript is 8:
+  String, Number, Bigint, Boolean, Undefined, Null, Symbol, Object
+
+NUMBER METHODS (NOT FINISHED)
+- These number methods can be used on all JavaScript numbers:
+- Method --> Description
+- toString() --> Returns a number as a string
+- toExponential() --> Returns a number written in exponential notation
+- toFixed() --> Returns a number written with a number of decimals
+- toPrecision() --> Returns a number written with a specified length
+- valueOf() --> Returns a number as a number
+
 NUMBER PROPERTIES
+
+
+
+
+
+
+
 ARRAYS
 ARRAY METHODS
 ARRAY SEARCH
