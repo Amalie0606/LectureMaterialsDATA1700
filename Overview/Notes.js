@@ -301,15 +301,15 @@ STATEMENTS
 
 - JavaScript keywords are used to identify actions to be performed.
 * JavaScript Keywords and descriptions:
-* var --> Declares a variable
-* let --> Declares a block variable
-* const --> Declares a block constant
-* if --> Marks a block of statements to be executed on a condition
-* switch --> Marks a block of statements to be executed in different cases
-* for --> Marks a block of statements to be executed in a loop
-* function --> Declares a function
-* return --> Exits a function
-* try --> Implements error handling to a block of statements
+  var --> Declares a variable
+  let --> Declares a block variable
+  const --> Declares a block constant
+  if --> Marks a block of statements to be executed on a condition
+  switch --> Marks a block of statements to be executed in different cases
+  for --> Marks a block of statements to be executed in a loop
+  function --> Declares a function
+  return --> Exits a function
+  try --> Implements error handling to a block of statements
 
 SYNTAX
 - Fixed values are called Literals.
@@ -395,7 +395,7 @@ OPERATORS
 - The Comparison Operator > compares values.
 
 * Types of JavaScript Operators:
-- Arithmetic Operators --> used to perform arithmetic on numbers
+- Arithmetic Operators --> used to perform arithmetic (math) on numbers.
 - Assignment Operators
 - Comparison Operators
 - String Operators
@@ -403,7 +403,7 @@ OPERATORS
 - Bitwise Operators
 - Ternary Operators
 - Type Operators
-* Operator --> Description
+* Arithmetic Operators --> Description
 + 	Addition
 - 	Subtraction
 * 	Multiplication
@@ -416,16 +416,16 @@ OPERATORS
 * Assignment operators assign values to JavaScript variables.
 - The Addition Assignment Operator (+=) adds a value to a variable.
 * JavaScript Comparison Operators
-Operator --> Description
-== 	equal to
-=== equal value and equal type
-!= 	not equal
-!== not equal value or not equal type
-> 	greater than
-< 	less than
->= 	greater than or equal to
-<= 	less than or equal to
-? 	ternary operator
+* Operator --> Description
+  == --> equal to
+  === --> equal value and equal type
+  != --> not equal
+  !== --> not equal value or not equal type
+  > --> greater than
+  < --> less than
+  >= --> greater than or equal to
+  <= --> less than or equal to
+  ? --> ternary operator
 
 * JavaScript String Comparison
   Example:
@@ -434,15 +434,15 @@ Operator --> Description
   let result = text1 < text2;
 
 * JavaScript Logical Operators
-- Operator --> Description
-&& 	logical and
-|| 	logical or
-! 	logical not
+* Operator --> Description
+  && --> logical and
+  || --> logical or
+  ! --> logical not
 
 * JavaScript Type Operators
-Operator --> Description
-typeof 	Returns the variable type
-instanceof 	Returns true if an object is an instance of an object type
+* Operator --> Description
+- typeof --> Returns the variable type
+- instanceof --> Returns true if an object is an instance of an object type
 
 ARITHMETIC
 - Operator Precedence:
@@ -561,12 +561,13 @@ OBJECTS
 
 * JavaScript Object Methods: are actions that can be performed on objects.
 - Methods are function definitions stored as property values.
-- Property --> Property Value
-- firstName -->	Selda
-- lastName --> Hobbit
-- age --> 3
-- eyeColor --> brown
-- fullName --> function() {return this.firstName + " " + this.lastName;}
+* Property --> Property Value
+  firstName -->	Selda
+  lastName --> Hobbit
+  age --> 3
+  eyeColor --> brown
+  fullName --> function() {return this.firstName + " " + this.lastName;}
+
   Example:
   const dog = {
   firstName: "Selda",
@@ -614,7 +615,7 @@ OBJECT PROPERTIES (NOT FINISHED)
 * Nested Objects:
 
 *** Complete JavaScript Object Methods and Properties ***
-- Name --> Description
+* Name --> Description
 - assign() --> Copies properties from a source object to a target object
 - constructor --> Returns the function that created an object's prototype
 - create() --> Returns an object created from an existing object
@@ -985,7 +986,34 @@ ARRAY CONST
 - Redeclaring or reassigning an existing const array, in the same scope, or in the same block, is not allowed.
 - Redeclaring an array with const, in another scope, or in another block, is allowed.
 
-DATES
+DATES (NOT FINISHED)
+- JavaScript Date Objects let us work with dates.
+- Date objects are static. The "clock" is not "running". The computer clock is ticking, date objects are not.
+- By default, JavaScript will use the browser's time zone and display a date as a full text string.
+* Creating Date Objects
+- Date objects are created with the new Date() constructor.
+- There are 9 ways to create a new date object:
+  new Date()
+  new Date(date string)
+  new Date(year,month)
+  new Date(year,month,day)
+  new Date(year,month,day,hours)
+  new Date(year,month,day,hours,minutes)
+  new Date(year,month,day,hours,minutes,seconds)
+  new Date(year,month,day,hours,minutes,seconds,ms)
+  new Date(milliseconds)
+* JavaScript new Date()
+- new Date() creates a date object with the current date and time.
+* new Date(date string)
+- new Date(date string) creates a date object from a date string.
+* Date Methods
+- When a date object is created, a number of methods allow you to operate on it.
+- Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond
+  of date objects, using either local time or UTC (universal, or GMT) time.
+* Displaying Dates
+- JavaScript will (by default) output dates using the toString() method. This is a string
+  representation of the date, including the time zone. The format is specified in the ECMAScript specification.
+
 DATE FORMATS
 DATE GET METHODS
 DATE SET METHODS
