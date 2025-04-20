@@ -778,13 +778,213 @@ NUMBER METHODS (NOT FINISHED)
 - toPrecision() --> Returns a number written with a specified length
 - valueOf() --> Returns a number as a number
 
-NUMBER PROPERTIES
+NUMBER PROPERTIES *
+
 ARRAYS
+- JavaScript arrays and Java arrays are not the same—they differ in syntax,
+  behavior, and underlying implementation.
+- An array is a special variable, which can hold more than one value:
+  Example:
+  const animals = ["Dog", "Cat", "Cow"];
+- An array can hold many values under a single name,
+  and you can access the values by referring to an index number.
+* Creating an Array
+- Using an array literal is the easiest way to create a JavaScript Array.
+- Syntax: const array_name = [item1, item2, ...];
+- It is a common practice to declare arrays with the const keyword.
+- Spaces and line breaks are not important. A declaration can span multiple lines.
+- You can also create an array, and then provide the elements.
+* Using the JavaScript Keyword new
+- The following example also creates an Array, and assigns values to it:
+  Example: const cars = new Array("Saab", "Volvo", "BMW");
+* Accessing Array Elements
+- You access an array element by referring to the index number:
+  Example:
+  const animals = ["Dog", "Cat", "Cow"];
+  let animals = animals [0];
+
+- Array indexes start with 0. [0] is the first element. [1] is the second element.
+* Changing an Array Element
+- This statement changes the value of the first element in animals:
+  Example:
+  const animals = ["Dog", "Cat", "Cow"];
+  animals [0] = "Goat";
+
+* Converting an Array to a String
+- The JavaScript method toString() converts an array to a string of (comma separated) array values.
+  Example:
+  const animals = ["Dog", "Cat", "Cow", "Goat"];
+  document.getElementById("demo").innerHTML = animals.toString();
+
+* Access the Full Array
+- With JavaScript, the full array can be accessed by referring to the array name:
+  Example:
+  const animals = ["Dog", "Cat", "Cow"];
+  document.getElementById("demo").innerHTML = animals;
+
+* Arrays are Objects
+- Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+- But in JavaScript arrays are best described as arrays. Arrays use numbers to access its "elements".
+- Objects use names to access its "members". In this example, person.firstName returns (person.firstName)
+  Example:
+  // Object:
+  const cow = {firstName:"Cutie", lastName:"HighlandCattle", age:5};
+
+* Array Elements Can Be Objects
+- JavaScript variables can be objects. Arrays are special kinds of objects.
+- Because of this, you can have variables of different types in the same Array.
+- You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+  Example:
+  myArray[0] = Date.now;
+  myArray[1] = myFunction;
+  myArray[2] = myAnimals;
+* Array Properties and Methods
+- The real strength of JavaScript arrays are the built-in array properties and methods:
+  Example:
+  animals.length   // Returns the number of elements
+  animals.sort()   // Sorts the array
+
+* The length Property
+- Returns the length of an array (the number of array elements):
+  Example
+  const animals = ["Dog", "Cat", "Cow", "Goat"];
+  let length = animals.length;
+
+- The length property is always one more than the highest array index.
+* Accessing the First Array Element
+ Example:
+ const fruits = ["Dog", "Cat", "Cow", "Goat"];
+ let animals = animals[0];
+
+* Accessing the Last Array Element
+  Example:
+  const animals = ["Dog", "Cat", "Cow", "Goat"];
+  let animals = animals[animals.length - 1];
+
+* Looping Array Elements
+- One way to loop through an array, is using a for loop.
+- You can also use the Array.forEach() function.
+
+* Adding Array Elements
+- The easiest way to add a new element to an array is using the push() method:
+  Example
+  const fruits = ["Dog", "Cat", "Cow"];
+  fruits.push("Hedgehog");  // Adds a new element (Hedgehog) to animals
+
+- New element can also be added to an array using the length property:
+  Example
+  const animals = ["Dog", "Cat", "Cow"];
+  animals[animals.length] = "Hedgehog";  // Adds "Hedgehog" to animals
+
+* Difference Between Arrays and Objects
+- In JavaScript, arrays use numbered indexes.
+- In JavaScript, objects use named indexes.
+- Arrays are a special kind of objects, with numbered indexes.
+
+* When to Use Arrays --> When to use Objects
+- JavaScript does not support associative arrays.
+- You should use objects when you want the element names to be strings (text).
+- You should use arrays when you want the element names to be numbers.
+
+* JavaScript new Array()
+- JavaScript has a built-in array constructor new Array().
+- But you can safely use [] instead.
+
 ARRAY METHODS
+* Basic Array Methods
+- Array length --> Returns number of elements in the array.
+- Array toString() --> Converts the array to a comma-separated string.
+- Array at(index) --> Returns element at the given index (supports negative indices).
+- Array join(separator) --> Joins array elements into a string with a custom separator.
+* Stack/Queue Methods
+- Array pop() --> Removes and returns the last element.
+- Array push(item) --> Adds item(s) to the end, returns new length.
+- Array shift() --> Removes and returns the first element.
+- Array unshift(item) --> Adds item(s) to the start, returns new length.
+* Delete
+- Array delete(index) -->  Removes value at index, but leaves undefined (does not reindex).
+*  Combining & Copying
+- Array concat(array) --> Combines arrays, returns a new array.
+- Array copyWithin() --> Copies a slice within the same array.
+* Flattening
+- Array flat() --> Flattens nested arrays (default depth is 1).
+* Splicing & Slicing
+- Array splice() --> Adds/removes items in-place.
+- Array toSpliced() --> Same as splice, but returns new array (non-destructive).
+- Array slice() --> Returns a shallow copy of a portion of the array.
+
 ARRAY SEARCH
+* Array Find and Search Methods
+- Array indexOf() --> Returns the first index of a value, or -1 if not found. (Searches from start to end)
+- Array lastIndexOf() --> Returns the last index of a value, or -1. (Searches from end to start)
+- Array includes() --> Returns true if the array contains the value.
+Finding with Conditions (Callback)
+- Array find() --> Returns the first element that passes the test (or undefined). Stops at first match.
+- Array findIndex() --> Returns the index of the first match (or -1).
+- Array findLast() --> Returns the last element that passes the test.
+- Array findLastIndex() --> Returns the index of the last match.
+
 ARRAY SORT
+* Alphabetic Sort
+- Array sort() --> Sorts array alphabetically by default (as strings), and modifies the original array.
+- Array reverse() --> Reverses the order of elements in place.
+- Array toSorted() --> Like sort(), but returns a new sorted array (does not change the original).
+- Array toReversed() --> Like reverse(), but returns a new reversed array.
+- Sorting Objects --> Use sort((a, b) => a.prop - b.prop) to sort an array of objects by a specific property.
+* Numeric Sort
+- Numeric Sort --> Use sort((a, b) => a - b) to sort numbers correctly (ascending), since default is lexicographic.
+- Random Sort --> Use sort(() => Math.random() - 0.5) to shuffle items randomly (not truly random).
+- Math.min() --> Returns the smallest number in an array.
+- Math.max() --> Returns the largest number in an array.
+
 ARRAY ITERATION
+- Array iteration methods operate on every array item.
+- They loop through each element and allow you to perform actions or return a new value/structure.
+*  Iteration & Transformation
+- Array forEach --> Runs a function on each element (no return value). Used for side effects (e.g., logging).
+- Array map() --> Transforms each item, returns a new array. Great for changing data.
+- Array flatMap() --> Like map(), but flattens one level of nested results. Useful for arrays of arrays.
+*  Filtering & Reducing
+- Array filter() --> Returns a new array with items that pass the test. Keeps only what you want.
+- Array reduce() --> Reduces array to a single value, left to right. Great for sums, objects, etc.
+- Array reduceRight() --> Same as reduce(), but right to left.
+* Testing Conditions
+- Array every() --> Returns true if all elements pass the test. All items must meet the condition.
+- Array some() --> Returns true if at least one item passes the test.
+* Array Utilities
+- Array from() --> Converts array-like or iterable objects into an array. Can also map with a second argument.
+- Array keys() --> Returns an iterator for array indices. Use with for...of or .next()
+- Array entries() --> Returns an iterator of [index, value] pairs.
+- Array with() --> Returns a new array with the value replaced at a specific index (immutable).
+* Spread Operator
+- Array Spread (...) --> (Spread) – Expands elements of an array (or iterable).
+  Useful for copying, merging, and passing args.
+
 ARRAY CONST
+- It has become a common practice to declare arrays using const.
+- An array declared with const cannot be reassigned.
+* Arrays are Not Constants
+- The keyword const is a little misleading.
+- It does NOT define a constant array. It defines a constant reference to an array.
+- Because of this, we can still change the elements of a constant array.
+* Elements Can be Reassigned
+- You can change the elements of a constant array.
+* Assigned when Declared
+- JavaScript const variables must be assigned a value when they are declared:
+- Meaning: An array declared with const must be initialized when it is declared.
+- Using const without initializing the array is a syntax error.
+- Arrays declared with var can be initialized at any time.
+- You can even use the array before it is declared.
+* Const Block Scope
+- An array declared with const has Block Scope.
+- An array declared in a block is not the same as an array declared outside the block.
+- An array declared with var does not have block scope.
+* Redeclaring Arrays
+- Redeclaring an array declared with var is allowed anywhere in a program.
+- Redeclaring or reassigning an array to const, in the same scope, or in the same block, is not allowed.
+- Redeclaring or reassigning an existing const array, in the same scope, or in the same block, is not allowed.
+- Redeclaring an array with const, in another scope, or in another block, is allowed.
+
 DATES
 DATE FORMATS
 DATE GET METHODS
