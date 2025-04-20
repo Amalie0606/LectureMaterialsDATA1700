@@ -8,17 +8,17 @@
 - Develop skills in and insight into the programming of dynamic web pages that communicate with a database
 - Gain knowledge of information security in web design
 
-* 1. Knowledge:
+* 1. Knowledge *
 1.1 Explaining the principles behind web architecture and client/server architecture
 1.2 Explaining different security challenges and how they are dealt with
 1.3 Explaining how to maintain state using sessions and cookies
 1.4 Explain the purpose with and functioning of generic data types
-* 2. Skills:
+* 2. Skills *
 2.1 Developing dynamic web pages by maintaining high-level user-friendliness and accessibility
 2.2 Linking dynamic web pages to a relational database
 2.3 Utilise Java Collections
 2.4 Understanding the functioning and use of recursion
-* 3 General competence:
+* 3 General competence *
 3.1 Developing object-oriented program structures in a web architecture
 3.2 Developing an extensive dynamic website with persistent data storage
 
@@ -180,7 +180,7 @@ TENTATIVE SUGGESTIONS
 - You can sketch out MVC structure and class responsibilities without needing to run a server.
 
 --------------------------------------------------------------------------------------------------------
-* ABOUT JAVASCRIPT LANGUAGE, LIBRARIES AND FRAMEWORKS
+* ABOUT JAVASCRIPT LANGUAGE
 - Java is a statically-typed language with rigid syntax,
   while Javascript is a dynamically-typed language with a more flexible syntax.
 - JavaScript is a dynamically typed object-oriented scripting language that does not need to be set up or installed,
@@ -194,36 +194,7 @@ TENTATIVE SUGGESTIONS
  compared to some other languages. However, its capabilities expand significantly
  through the use of libraries and frameworks.
 
-* LIBRARY
-- A library is a collection of pre-written code that you can call upon when needed.
- You are in control, and you decide when and how to use the library.
-- Example: jQuery is a popular JavaScript library.
-- Download: //jquery.com/download/
-- About: https://api.jquery.com/
-
-* FRAMEWORK
-- A framework is a larger structure where the framework is in control,
-  and you fill in the parts specific to your application. It often sets the architecture and flow.
-  Example: React, Angular, and Vue.js are frameworks (React is technically a library - functions like a framework).
-- In a framework: The framework calls your code (not the other way around).
-- It usually comes with structure, patterns, and rules to follow.
-- You don’t just write everything from scratch — you work within the structure the framework gives you.
-* Bootstrap is a popular CSS framework used to build responsive and mobile-first websites.
-  It helps you style your site with: Layouts (grids, columns), Buttons, Forms, Modals, Navbars
-- It also includes some JavaScript components (like dropdowns, modals, tooltips).
-
-* Decision Guide:
-- Need to style and lay out pages fast? → Bootstrap
-- Need to fetch data, animate elements, handle custom events? → jQuery
-- Need both UI components and custom scripting? →
-  You can—and often do—use Bootstrap + jQuery together
-* Bottom line:
-- jQuery = your go‑to when you want to program dynamic behavior.
-- Bootstrap = your go‑to when you want a ready‑made look and feel.
-- They’re complementary rather than interchangeable.
-  Choose based on whether your priority is behavior (jQuery) or presentation (Bootstrap).
-
-WHERE TO BEST PRACTICE
+* WHERE TO BEST PRACTICE *
 * In modern development, it’s considered better practice to keep HTML, CSS, and JavaScript
   separate for these reasons: Cleaner code, Easier to maintain, Better separation of concerns
 - In HTML refer like this: <script src="filename.js"></
@@ -234,7 +205,7 @@ WHERE TO BEST PRACTICE
 - 2. Or, if placing it in the <head>, use the defer attribute: <script src="script.js" defer></script>
 - This waits until the page is fully loaded before running the script.
 
-INTRODUCTION (W3Schools)
+* INTRODUCTION * (W3Schools)
 - JavaScript to program the behavior of web pages, in conjunction with HTML + CSS
 - Web programming language: can update and change HTML, CSS, calculate, manipulate and validate data.
 * Change HTML Content: JS HTML method getElementById().
@@ -1149,24 +1120,94 @@ NAVIGATION
 NODES
 COLLECTIONS
 NODE LISTS
+-----------------------------------------------------------------------------------------------------------
 
-*** For a myriad of examples: https://www.w3schools.com/js/js_examples.asp ***
+* JAVASCRIPT LIBRARY *
+/ Provides reusable functionality for common tasks /
+- A library is a collection of pre-written code that you can call upon when needed.
+ You are in control, and you decide when and how to use the library.
+* JQUERY: Library *
+- jQuery is a popular JavaScript library.
+- Download: //jquery.com/download/
+- About: https://api.jquery.com/
 
-Source: https://www.w3schools.com/js/default.asp
+* JAVASCRIPT FRAMEWORK *
+/ Provides structure and guidelines for building apps /
+- A framework is a larger structure where the framework is in control,
+  and you fill in the parts specific to your application. It often sets the architecture and flow.
+  Example: React, Angular, and Vue.js are frameworks (React is technically a library - functions like a framework).
+- In a framework: The framework calls your code (not the other way around).
+- It usually comes with structure, patterns, and rules to follow.
+- You don’t just write everything from scratch — you work within the structure the framework gives you.
+* BOOTSTRAP: Framework *
+- A popular CSS framework used to build responsive and mobile-first websites.
+  It helps you style your site with: Layouts (grids, columns), Buttons, Forms, Modals, Navbars
+- It also includes some JavaScript components (like dropdowns, modals, tooltips).
 
-TRANLSTAOR LANGUAGE INTO JS:
-https://anythingtranslate.com/translators/javascript-translator/
+* Decision Guide:
+- Need to style and lay out pages fast? → Bootstrap
+- Need to fetch data, animate elements, handle custom events? → jQuery
+- Need both UI components and custom scripting? →
+  You can—and often do—use Bootstrap + jQuery together
+* Bottom line:
+- jQuery = your go‑to when you want to program dynamic behavior.
+- Bootstrap = your go‑to when you want a ready‑made look and feel.
+- They’re complementary rather than interchangeable.
+  Choose based on whether your priority is behavior (jQuery) or presentation (Bootstrap).
 
-LINKS
-* 20 Things JavaScript Developers Should know:
-https://www.youtube.com/playlist?list=PL1PqvM2UQiMoGNTaxFMSK2cih633lpFKP
+* JAVASCRIPT WEB API *
+/ Provides a way to get data or use external services /
+- It can extend the functionality of the browser, greatly simplify complex functions
+  and provide easy syntax to complex code.
+* API stands for Application Programming Interface.
+- A Web API is an application programming interface for the Web.
+- A Browser API can extend the functionality of a web browser.
+- A Server API can extend the functionality of a web server.
+* Random jokes: https://official-joke-api.appspot.com/random_joke
 
-* Amigos code:
-https://www.youtube.com/c/amigoscode?app=desktop
+* AJAX: technique / concept *
+- Read data from a web server - after the page has loaded, Update a web page without reloading the page and
+  send data to a web server - in the background.
+* AJAX = Asynchronous JavaScript And XML.
+- AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server),
+  and JavaScript and HTML DOM (to display or use the data).
+- AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.
+  This means that it is possible to update parts of a web page, without reloading the whole page.
 
-PLAY
-* Code Combat: https://codecombat.com/play
-* Code Wars: https://www.codewars.com/
-* Screeps: https://screeps.com/
-* The SQL murder mystery: https://mystery.knightlab.com/
- */
+* JSON: Data format *
+- JSON stands for JavaScript Object Notation, is a text format for storing and transporting data,
+  and is "self-describing" and easy to understand.
+- JSON is a lightweight data-interchange format. It is plain text written in JavaScript object notation.
+  Used to send data between computers, and is language independent.
+- You can receive pure text from a server and use it as a JavaScript object;
+- Send a JavaScript object to a server in pure text format;
+- Work with data as JavaScript objects, with no complicated parsing and translations.
+
+* JAVASCRIPT EXAMPLES *
+* Examples: https://www.w3schools.com/js/js_examples.asp
+* HTML DOM: https://www.w3schools.com/js/js_dom_examples.asp
+* HTML INPUT: https://www.w3schools.com/js/js_input_examples.asp
+* HTML OBJECTS: https://www.w3schools.com/js/js_ex_dom.asp
+* HTML EVENTS: https://www.w3schools.com/js/js_events_examples.asp
+* BROWSER OBJECT: https://www.w3schools.com/js/js_ex_browser.asp
+* WEBSITE: https://www.w3schools.com/js/js_website.asp
+
+* JAVASCRIPT REFERENCE *
+- Complete JavaScript and HTML DOM References
+- All Properties and Methods with Full Examples: https://www.w3schools.com/jsref/default.asp
+----------------------------------------------------------------------------------------------------------
+
+* TRANLSTAOR *
+- Language to Java Script: https://anythingtranslate.com/translators/javascript-translator/
+
+* LINKS / TIPS*
+- 20 Things JavaScript Developers Should know:
+  https://www.youtube.com/playlist?list=PL1PqvM2UQiMoGNTaxFMSK2cih633lpFKP
+- Amigos code: https://www.youtube.com/c/amigoscode?app=desktop
+
+* PLAY / AQUIRE SKILLS *
+- Code Combat: https://codecombat.com/play
+- Code Wars: https://www.codewars.com/
+- Screeps: https://screeps.com/
+- The SQL murder mystery: https://mystery.knightlab.com/
+*/
