@@ -959,8 +959,14 @@ ARRAY CONST
 
 DATES (NOT FINISHED)
 - JavaScript Date Objects let us work with dates.
-- Date objects are static. The "clock" is not "running". The computer clock is ticking, date objects are not.
+- Date objects are static / date objects are not "running".
 - By default, JavaScript will use the browser's time zone and display a date as a full text string.
+- Example: Mon Apr 21 2025 18:14:04 GMT+0200 (Central European Summer Time)
+- Year: 2025, Month: 4, Day: 21, Hours: 18:00, Minutes: 16, Seconds: 4.
+  Examples:
+  const d = new Date();
+  const d = new Date("2022-03-25");
+
 * Creating Date Objects
 - Date objects are created with the new Date() constructor.
 - There are 9 ways to create a new date object:
@@ -974,27 +980,180 @@ DATES (NOT FINISHED)
   new Date(year,month,day,hours,minutes,seconds,ms)
   new Date(milliseconds)
 * JavaScript new Date()
-- new Date() creates a date object with the current date and time.
-* new Date(date string)
-- new Date(date string) creates a date object from a date string.
+  new Date() --> creates a date object with the current date and time.
+  new Date(date string) --> creates a date object from a date string.
+- JavaScript counts months from 0 to 11: January = 0, December = 11.
 * Date Methods
 - When a date object is created, a number of methods allow you to operate on it.
 - Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond
   of date objects, using either local time or UTC (universal, or GMT) time.
-* Displaying Dates
-- JavaScript will (by default) output dates using the toString() method. This is a string
-  representation of the date, including the time zone. The format is specified in the ECMAScript specification.
+* Displaying dates
+- JavaScript will (by default) output dates using the toString() method.
+  This is a string representation of the date, including the time zone.
+- When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+  Example
+  const d = new Date();
+  d.toString();
+- toDateString() --> method converts a date to a more readable format:
+  Example
+  const d = new Date();
+  d.toDateString();
 
-DATE FORMATS
 DATE GET METHODS
+* The new Date() Constructor
+- In JavaScript, date objects are created with new Date().
+  new Date() --> returns a date object with the current date and time.
+  Example:
+  // Get the Current Time
+  const date = new Date();
+* Date Get Methods
+  Method --> Description
+  getFullYear() --> Get year as a four digit number (yyyy)
+  getMonth() --> Get month as a number (0-11)
+  getDate() --> Get day as a number (1-31)
+  getDay() --> Get weekday as a number (0-6)
+  getHours() --> Get hour (0-23)
+  getMinutes() --> Get minute (0-59)
+  getSeconds() --> Get second (0-59)
+  getMilliseconds() --> Get millisecond (0-999)
+  getTime() --> Get time (milliseconds since January 1, 1970)
+- The get methods above return Local time.
+- The get methods return information from existing date objects.
+- The time in a date object is NOT the same as current time.
+
 DATE SET METHODS
+- Set Date methods are used for setting a part of a date:
+  Method --> Description
+  setDate() --> Set the day as a number (1-31)
+  setFullYear() --> Set the year (yyyy)
+  setHours() --> Set the hour (0-23)
+  setMilliseconds() --> Set the milliseconds (0-999)
+  setMinutes() --> Set the minutes (0-59)
+  setMonth() --> Set the month (0-11)
+  setSeconds() --> Set the seconds (0-59)
+  setTime() --> Set the time (milliseconds since January 1, 1970)
+
 MATH
+- The JavaScript Math object allows you to perform mathematical tasks on numbers.
+  Example
+  Math.PI;
+* Unlike other objects, the Math object has no constructor. The Math object is static.
+  All methods and properties can be used without creating a Math object first.
+- The syntax for any Math property is : Math.property.
+- JavaScript provides 8 mathematical constants that can be accessed as Math properties.
+* The syntax for Math any methods is : Math.method(number)
+
 RANDOM
+- Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive).
+- Math.random() always returns a number lower than 1.
+  Example
+  // Returns a random number:
+  Math.random();
+
 BOOLEANS
+- A JavaScript Boolean represents one of two values: true or false.
+  YES / NO
+  ON / OFF
+  TRUE / FALSE
+
+* You can use the Boolean() function to find out if an expression (or a variable) is true:
+  Example
+  Boolean(10 > 9)
+
+- Everything With a "Value" is True. Everything Without a "Value" is False.
+
 COMPARISONS
+- Comparison and Logical operators are used to test for true or false.
+* Comparison operators are used in logical statements to determine equality or difference
+  between variables or values.
+* Logical operators are used to determine the logic between variables or values.
+* Conditional (Ternary) Operator assigns a value to a variable based on some condition.
+
 IF ELSE
+- Conditional statements are used to perform different actions based on different conditions.
+* Conditional Statements
+- Very often when you write code, you want to perform different actions for different decisions.
+- You can use conditional statements in your code to do this.
+- In JavaScript we have the following conditional statements:
+  Use if to specify a block of code to be executed, if a specified condition is true
+  Use else to specify a block of code to be executed, if the same condition is false
+  Use else if to specify a new condition to test, if the first condition is false
+  Use switch to specify many alternative blocks of code to be executed
+
+* The if Statement --> Use to specify a block of JavaScript code to be executed if a condition is true.
+  Syntax:
+  if (condition) {
+  //  block of code to be executed if the condition is true
+  }
+
+* The else Statement --> Use to specify a block of code to be executed if the condition is false.
+  Syntax:
+  if (condition) {
+  //  block of code to be executed if the condition is true
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+
+* The else if Statement --> Use to specify a new condition if the first condition is false.
+  Syntax
+  if (condition1) {
+  //  block of code to be executed if condition1 is true
+  } else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+  } else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+  }
+
 SWITCH
+- The switch statement is used to perform different actions based on different conditions.
+* Switch Statement --> Use to select one of many code blocks to be executed.
+  Syntax:
+  switch(expression) {
+  case x:
+  // code block
+  break;
+  case y:
+  // code block
+  break;
+  default:
+  // code block
+  }
+
+- The switch expression is evaluated once.
+- The value of the expression is compared with the values of each case.
+- If there is a match, the associated block of code is executed.
+- If there is no match, the default code block is executed.
+
+* The break Keyword
+- When JavaScript reaches a break keyword, it breaks out of the switch block.
+- This will stop the execution inside the switch block.
+- It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+* The default Keyword --> specifies the code to run if there is no case match:
+- If default is not the last case in the switch block, remember to end the default case with a break.
+
 LOOP FOR
+- Loops can execute a block of code a number of times.
+- Loops are handy, if you want to run the same code over and over again, each time with a different value.
+  Often this is the case when working with arrays.
+  Example:
+  for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+  }
+
+* Different Kinds of Loops
+  for --> loops through a block of code a number of times
+  for/in --> loops through the properties of an object
+  for/of --> loops through the values of an iterable object
+  while --> loops through a block of code while a specified condition is true
+  do/while --> also loops through a block of code while a specified condition is true
+
+
+
+
+
+
+
 LOOP FOR IN
 LOOP FOR OF
 LOOP WHILE
