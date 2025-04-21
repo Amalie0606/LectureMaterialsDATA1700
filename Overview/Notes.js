@@ -1148,12 +1148,6 @@ LOOP FOR
   while --> loops through a block of code while a specified condition is true
   do/while --> also loops through a block of code while a specified condition is true
 
-
-
-
-
-
-
 LOOP FOR IN
 LOOP FOR OF
 LOOP WHILE
@@ -1175,15 +1169,113 @@ HOISTING
 STRICT MODE
 THIS KEYWORD
 ARROW FUNCTION
+
 CLASSES
+* Syntax: Use the keyword class to create a class. Always add a method named constructor():
+  class ClassName {
+  constructor() { ... }
+  }
+
+- A JavaScript class is not an object. It is a template for JavaScript objects.
+- When you have a class, you can use the class to create objects.
+
+* The Constructor Method
+  It has to have the exact name "constructor"
+  It is executed automatically when a new object is created
+  It is used to initialize object properties
+- If you do not define a constructor method, JavaScript will add an empty constructor method.
+
+* Class Methods
+- Class methods are created with the same syntax as object methods.
+- Use the keyword class to create a class.
+- Always add a constructor() method.
+- Then add any number of methods.
+  Syntax:
+  class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+  }
+
+
 MODULES
-JSON
+- JavaScript modules allow you to break up your code into separate files.
+- This makes it easier to maintain a code-base.
+- Modules are imported from external files with the import statement.
+- Modules also rely on type="module" in the <script> tag.
+  Example
+  <script type="module">
+  import message from "./message.js";
+  </script>
+
 DEBUGGING
-STYLE GUIDE
+* The console.log() Method
+- If your browser supports debugging, you can use console.log()
+  to display JavaScript values in the debugger window:
+
 BEST PRACTICES
-MISTAKES
-PERFORMANCE
-RESERVED WORDS
+* Avoid Global Variables
+- This includes all data types, objects, and functions.
+- Global variables and functions can be overwritten by other scripts.
+- Use local variables instead, and learn how to use closures.
+
+* Always Declare Local Variables
+- All variables used in a function should be declared as local variables.
+- Local variables must be declared with the var, the let, or the const keyword,
+  otherwise they will become global variables.
+
+* Declarations on Top
+- It is a good coding practice to put all declarations at the top of each script or function.
+  Give cleaner code
+  Provide a single place to look for local variables
+  Make it easier to avoid unwanted (implied) global variables
+  Reduce the possibility of unwanted re-declarations
+
+* Initialize Variables
+- It is a good coding practice to initialize variables when you declare them.
+  Give cleaner code
+  Provide a single place to initialize variables
+  Avoid undefined values
+
+* Declare Objects with const
+- Declaring objects with const will prevent any accidental change of type.
+
+* Declare Arrays with const
+- Declaring arrays with const will prevent any accidental change of type:
+
+* Don't Use new Object()
+  Use "" instead of new String()
+  Use 0 instead of new Number()
+  Use false instead of new Boolean()
+  Use {} instead of new Object()
+  Use [] instead of new Array()
+  Use /()/ instead of new RegExp()
+  Use function (){} instead of new Function()
+
+* Beware of Automatic Type Conversions
+- JavaScript is loosely typed.
+- A variable can contain all data types.
+- A variable can change its data type:
+
+* Use === Comparison
+- The == comparison operator always converts (to matching types) before comparison.
+- The === operator forces comparison of values and type:
+
+* Use Parameter Defaults
+- If a function is called with a missing argument, the value of the missing argument is set to undefined.
+- Undefined values can break your code. It is a good habit to assign default values to arguments.
+
+* End Your Switches with Defaults
+- Always end your switch statements with a default. Even if you think there is no need for it.
+
+* Avoid Number, String, and Boolean as Objects
+- Always treat numbers, strings, or booleans as primitive values. Not as objects.
+- Declaring these types as objects, slows down execution speed, and produces nasty side effects.
+
+* Avoid Using eval()
+- The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.
+- Because it allows arbitrary code to be run, it also represents a security problem.
 
 * JS Objects * (NOT FINISHED)
 DEFINITIONS
