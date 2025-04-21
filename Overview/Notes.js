@@ -1162,13 +1162,41 @@ TYPE CONVERSION
 DESTRUCTURING
 BITWISE
 REGEXP
-PRECEDENCE
+
 ERRORS
+- The try statement defines a code block to run (to try).
+- The catch statement defines a code block to handle any error.
+- The finally statement defines a code block to run regardless of the result.
+- The throw statement defines a custom error.
+
 SCOPE
+- Scope determines the accessibility (visibility) of variables. There are 3 types of scope:
+  Block scope
+  Function scope
+  Global scope
+
 HOISTING
-STRICT MODE
+- In JavaScript, a variable can be declared after it has been used.
+- In other words; a variable can be used before it has been declared.
+- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+ (to the top of the current script or the current function).
+* The let and const Keywords
+- Variables defined with let and const are hoisted to the top of the block, but not initialized.
+- Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
+- Using a let variable before it is declared will result in a ReferenceError.
+- The variable is in a "temporal dead zone" from the start of the block until it is declared.
+- To avoid bugs, always declare all variables at the beginning of every scope.
+
 THIS KEYWORD
-ARROW FUNCTION
+- In JavaScript, the this keyword refers to an object.
+- The this keyword refers to different objects depending on how it is used:
+  In an object method, this refers to the object.
+  Alone, this refers to the global object.
+  In a function, this refers to the global object.
+  In a function, in strict mode, this is undefined.
+  In an event, this refers to the element that received the event.
+  Methods like call(), apply(), and bind() can refer this to any object.
+- this is not a variable. It is a keyword. You cannot change the value of this.
 
 CLASSES
 * Syntax: Use the keyword class to create a class. Always add a method named constructor():
@@ -1197,7 +1225,6 @@ CLASSES
   method_2() { ... }
   method_3() { ... }
   }
-
 
 MODULES
 - JavaScript modules allow you to break up your code into separate files.
@@ -1446,6 +1473,52 @@ NODE LISTS
 * JAVASCRIPT REFERENCE *
 - Complete JavaScript and HTML DOM References
 - All Properties and Methods with Full Examples: https://www.w3schools.com/jsref/default.asp
+
+* DATABASE
+- There are two main types of databases JavaScript often works with:
+* SQL (Relational) databases – like MySQL, PostgreSQL, or SQLite.
+* NoSQL (Non-relational) databases – like MongoDB, Firebase, or CouchDB.
+- PostgreSQL/Postgres is a powerful, open-source relational database system.
+  It’s commonly used with JavaScript, especially via Node.js on the backend.
+* Connecting and Querying
+  Example sql:
+  const { Client } = require('pg');
+
+  const client = new Client({
+  user: 'your_username',
+  host: 'localhost',
+
+  database: 'poster_db',
+  password: 'your_password',
+  port: 5432,
+  });
+
+  client.connect();
+
+  client.query('SELECT * FROM posters', (err, res) => {
+  if (err) {
+  console.error(err);
+  } else {
+  console.log(res.rows);
+  }
+  client.end();
+  });
+
+* Table structure
+  Example sql:
+  CREATE TABLE posters (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100),
+  artist VARCHAR(100),
+  year INT,
+  image_url TEXT
+  );
+
+- You can insert data like this:
+  Example sql:
+  INSERT INTO posters (title, artist, year, image_url)
+  VALUES ('The Matrix', 'Unknown', 1999, 'https://example.com/matrix.jpg');
+
 ----------------------------------------------------------------------------------------------------------
 
 * TRANLSTAOR *
