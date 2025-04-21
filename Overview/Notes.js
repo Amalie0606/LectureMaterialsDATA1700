@@ -1198,7 +1198,6 @@ CLASSES
   method_3() { ... }
   }
 
-
 MODULES
 - JavaScript modules allow you to break up your code into separate files.
 - This makes it easier to maintain a code-base.
@@ -1446,6 +1445,52 @@ NODE LISTS
 * JAVASCRIPT REFERENCE *
 - Complete JavaScript and HTML DOM References
 - All Properties and Methods with Full Examples: https://www.w3schools.com/jsref/default.asp
+
+* DATABASE
+- There are two main types of databases JavaScript often works with:
+* SQL (Relational) databases – like MySQL, PostgreSQL, or SQLite.
+* NoSQL (Non-relational) databases – like MongoDB, Firebase, or CouchDB.
+- PostgreSQL/Postgres is a powerful, open-source relational database system.
+  It’s commonly used with JavaScript, especially via Node.js on the backend.
+* Connecting and Querying
+  Example sql:
+  const { Client } = require('pg');
+
+  const client = new Client({
+  user: 'your_username',
+  host: 'localhost',
+
+  database: 'poster_db',
+  password: 'your_password',
+  port: 5432,
+  });
+
+  client.connect();
+
+  client.query('SELECT * FROM posters', (err, res) => {
+  if (err) {
+  console.error(err);
+  } else {
+  console.log(res.rows);
+  }
+  client.end();
+  });
+
+* Table structure
+  Example sql:
+  CREATE TABLE posters (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100),
+  artist VARCHAR(100),
+  year INT,
+  image_url TEXT
+  );
+
+- You can insert data like this:
+  Example sql:
+  INSERT INTO posters (title, artist, year, image_url)
+  VALUES ('The Matrix', 'Unknown', 1999, 'https://example.com/matrix.jpg');
+
 ----------------------------------------------------------------------------------------------------------
 
 * TRANLSTAOR *
