@@ -25,8 +25,7 @@ VALUES
 
 COMMIT;
 
-/*
-* References: Lecture 13 - Databases 2:
-• https://www.tutorialspoint.com/springjdbc/springjdbc_rowmapper.htm
-• https://zetcode.com/spring/beanpropertyrowmapper/
- */
+/* References: Lecture 13 - Databases 2:
+- https://www.tutorialspoint.com/springjdbc/springjdbc_rowmapper.htm
+- https://zetcode.com/spring/beanpropertyrowmapper/
+*/

@@ -1,8 +1,27 @@
 
 /* --------------------------------------- OVERVIEW ---------------------------------------------------
                                        Exam date: 22 May
-                                    DATA1700 Learning outcomes
 
+* During the exam you will have access to Java 17 and IntelliJ IDEA 2022.2.1 Community Edition.
+- You cannot create a project using the built-in Spring Boot initialiser/generator.
+* Firefox: try using Firefox DevTools before the exam to get familiar with the layout and shortcuts.
+- Practice basic debugging in Firefox.
+* You will be able to use jQuery and Bootstrap during the exam.
+- How to Use the Libraries:
+1. Direct Reference (if it works) You may be able to reference the library directly like this:
+   <script src="https://provided-url.com/jquery-3.7.1.js"></script>
+2. Manual Download (Fallback) If the direct reference doesn’t work:
+- Right-click the provided link and choose “Save Page As”, or
+- Open the link, press Ctrl + A, then Ctrl + C to copy all the code.
+- In IntelliJ, create a new file called jquery.js, paste the code with Ctrl + V, and reference it locally:
+  include in html <script src="jquery.js"></script>
+
+- Either it works, or its a lesson
+- Its not the end of the world
+- I am the master of my faith, captian of my soul
+- Good luck summer soon
+
+* DATA1700 Learning outcomes *
 - Acquire basic knowledge of web servers and develop skills
 - Develop insight into full-stack web programming
 - Develop skills in and insight into the programming of dynamic web pages that communicate with a database

@@ -33,19 +33,25 @@ VALUES
 
 -- Step 3: Query to See All Enhancements
 SELECT id, name, description, type, manufacturer
-FROM public.enhancements; 
-
--- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
--- Download: postgresql 17.4-1-windows-x64.exe (port number server is listed: 5432) Selected: Database Server
--- PostgreSQL is an object-relational database management system.
--- Supports a large part of the SQL standard and offers many modern features: 
---> complex queries, foreign keys, triggers, updatable views, transactional integrity, multiversion concurrency control
--- can be extended by the user in many ways, for example by adding new:
---> data types, functions, operators, aggregate functions, index methods, procedural languages 
--- More info: file:///C:/Program%20Files/PostgreSQL/17/doc/src/sgml/html/index.html 
+FROM public.enhancements;
 
 -- Example SQL Statement: 
 SELECT version();
+
+
+-- MY NOTES ----------------------------------------------------------------------------------------------------------
+-- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
+-- Download: postgresql 17.4-1-windows-x64.exe (port number server is listed: 5432) Selected: Database Server
+-- PostgreSQL is an object-relational database management system.
+-- Supports a large part of the SQL standard and offers many modern features:
+--> complex queries, foreign keys, triggers, updatable views, transactional integrity, multiversion concurrency control
+-- can be extended by the user in many ways, for example by adding new:
+--> data types, functions, operators, aggregate functions, index methods, procedural languages
+-- More info: file:///C:/Program%20Files/PostgreSQL/17/doc/src/sgml/html/index.html
+
+-- References: Lecture 12 - Databases 1:
+-- MySQL: https://dev.mysql.com/doc/refman/8.4/en/data-types.html
+-- PostgreSQL: https://www.postgresql.org/docs/17/datatype.html
 
 -- SQL commands divided (language): https://www.linkedin.com/pulse/types-sql-commands-ankush-thavali-8enef 
 --> 1. Data Definition: CREATE, DROP, ALTER, TURNICATE;
@@ -75,11 +81,7 @@ SELECT version();
 
 -- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/ 
 
-/*
-* References: Lecture 12 - Databases 1:
-• MySQL: https://dev.mysql.com/doc/refman/8.4/en/data-types.html
-• PostgreSQL: https://www.postgresql.org/docs/17/datatype.html
- */
+
 
 
 
