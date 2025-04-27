@@ -1,1 +1,6 @@
 Alice Johnson,Bob Lee,Charlie Kim,Diana Ross,Eddie Chen,Fatima Khan,George Silva,Hannah Lin,Ian Wright,Julia Park,Kevin Zhang,Lisa Turner,Marcus Bell,Nadia Ahmed,Omar Patel,Paige Thompson,Quinn Davis,Rachel Stone,Samir Kapoor,Tina Evans
+
+Resources Lecture 14: RegEx, Validaion and Sessions:
+- https://regex101.com/ (Choose Java 8)
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
+- https://en.wikipedia.org/wiki/Business_logic
