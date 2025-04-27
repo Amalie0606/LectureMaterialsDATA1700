@@ -16,6 +16,8 @@
 - In IntelliJ, create a new file called jquery.js, paste the code with Ctrl + V, and reference it locally:
   include in html <script src="jquery.js"></script>
 
+Important: Complete all weekly tasks + oblig 2
+
 - Either it works, or its a lesson
 - Its not the end of the world
 - I am the master of my faith, captian of my soul
@@ -42,161 +44,124 @@
 3.2 Developing an extensive dynamic website with persistent data storage
 
 TENTATIVE SUGGESTIONS
-1. Knowledge:
-1.1 Principles behind Web Architecture & Client–Server Architecture:
-* Client–Server model:
-- Clients (browsers, mobile apps) send HTTP(S) requests.
-- Servers receive requests, process them (e.g. run business logic, query databases),
-  and return responses (HTML, JSON, files).
-* Multi‑tier/Web architecture:
-- Presentation tier (UI in browser)
-- Application tier (web server, application logic)
-- Data tier (relational/NoSQL database)
-- Statelessness of HTTP: each request is independent; state must be managed explicitly
-  (see sessions/cookies below).
-* REST principles (often used in modern web APIs): resources identified by URLs,
-  uniform interface (GET/POST/PUT/DELETE), stateless interactions.
+1. Knowledge (Theory You Should Be Able to Explain & Apply) ***
+- 1.1 Web and Client/Server Architecture
+* Focus on practicing:
+- Drawing or explaining the flow of an HTTP request from client to server and back.
+- Building a simple Java servlet that processes form input and returns HTML.
+- Understanding how HTML/CSS/JavaScript (client-side) interacts with a servlet (server-side).
+* Practice Task:
+- Create a servlet that handles a POST request and returns a confirmation page.
 
-1.2. Security Challenges & Mitigations:
-* Cross‑Site Scripting (XSS)
-- Risk: attacker injects malicious scripts into pages viewed by other users.
-- Mitigation: always escape or sanitize user‑supplied data before inserting into the DOM;
-  use Content Security Policy (CSP).
-* SQL Injection
-- Risk: attacker crafts input that alters your SQL queries.
-- Mitigation: use parameterized queries (prepared statements) or ORM frameworks.
-* Cross‑Site Request Forgery (CSRF)
-- Risk: attacker tricks a logged‑in user’s browser into submitting unwanted requests.
-- Mitigation: include anti‑CSRF tokens in forms, require same‑site cookies, check Origin/Referer headers.
-* Insecure Direct Object References (IDOR)
-- Risk: users access data they shouldn’t by tweaking identifiers in URLs.
-- Mitigation: enforce authorization checks on every request.
-* Secure Transport
-- Always use HTTPS to protect data in transit and set Strict-Transport-Security.
+1.2 Security Challenges in Web Design
+* You should know:
+- XSS (Cross-site Scripting): What it is, and how to prevent it (e.g., escape HTML).
+- SQL Injection: How parameterized queries prevent it.
+- Session hijacking and CSRF: Know the concept, even if not implementing.
+* Practice Task:
+- Simulate a login form and sanitize user inputs.
+- Write a Java method that escapes HTML characters.
 
-1.3. Maintaining State with Sessions & Cookies
-* Cookies
-- Small key–value pairs stored by browser, sent automatically on each request to matching domain/path.
-- Use flags: HttpOnly (not accessible to JavaScript), Secure (HTTPS only), SameSite (CSRF protection).
-* Sessions
-- Server generates a unique session ID and stores associated state (e.g. user ID, cart contents) in memory,
-  database, or cache.
-- Client receives only the session ID in a cookie; server trusts its own store.
-* Flow
-- 1. User logs in → server creates session, sets Set-Cookie: JSESSIONID=XYZ.
-- 2. Browser sends Cookie: JSESSIONID=XYZ on subsequent requests.
-- 3. Server retrieves session data via that ID.
+1.3 Maintaining State with Sessions and Cookies
+* Practice with:
+- Setting and retrieving cookies in Java servlets.
+- Using HttpSession to store user-specific data (e.g., username after login).
+* Practice Task:
+- Create a login servlet:
+- If login is correct, store the username in session and display a welcome page.
+- Use session.getAttribute("user") and session.setAttribute("user", "value").
 
-1.4. Purpose & Functioning of Generic Data Types
-* Generics (in Java) enable you to write classes/methods that operate on types specified at use‑time, providing:
-- Compile‑time type safety (no need for casts)
-- Reusability (one implementation works for many types)
+1.4 Generic Data Types
+* Be able to:
+- Use List<T>, Map<K,V>, etc. in real code.
+- Write and understand methods like:
   Example:
-  // A generic Box class
-  public class Box<T> {
-  private T value;
-  public void set(T v) { value = v; }
-  public T get() { return value; }
+  public <T> void printList(List<T> list) {
+    for (T item : list) {
+        System.out.println(item);
+    }
   }
+* Practice Task:
+- Create a DAO-style class that stores objects in a List<T>, and returns filtered or sorted results.
 
-  Box<String> nameBox = new Box<>();
-  nameBox.set("Alice");        // only Strings allowed
-  String name = nameBox.get(); // no cast needed
+2. Skills (What You Should Be Able to Build and Write) ***
+2.1 User-Friendly, Accessible Dynamic Web Pages
+* Use:
+- Bootstrap for responsive layout, accessible labels, contrast, form controls.
+- jQuery for:
+  Showing/hiding sections dynamically
+  Validating input before submission
+* Practice Task:
+- Create a responsive form using Bootstrap.
+- Use jQuery to:
+  Validate fields (e.g., required, email format)
+  Show/hide a comment box only if a checkbox is selected
 
-2. Skills:
-2. 1. Developing Dynamic Web Pages with User‑Friendliness & Accessibility
-* Dynamic content via server‑side templates (JSP, Thymeleaf) or client‑side JS (jQuery, React).
-* Accessibility (a11y):
-- Use semantic HTML (<header>, <nav>, <main>, <button>).
-- Provide alt text on images, labels for form controls.
-- Ensure keyboard navigation and appropriate ARIA roles if needed.
-* Progressive enhancement: ensure core functionality works without JS, then enhance.
+2.2 Linking to a Relational Database
+* Since a real DB might not be available:
+- Practice using Java JDBC with an embedded DB like H2 or SQLite (if permitted locally).
+- Otherwise, simulate with Java collections.
+* Practice Task:
+- Create a Java class that stores data in a List<MyEntity> and can:
+  Insert a new entry
+  Retrieve all entries
+  Filter/search entries by a field
 
-2. 2. Linking Dynamic Pages to a Relational Database
-- JDBC (Java Database Connectivity) for direct SQL:
-  Connection conn = DriverManager.getConnection(url, user, pass);
-  PreparedStatement ps = conn.prepareStatement
-  ("SELECT * FROM users WHERE id = ?");
-  ps.setInt(1, userId);
-  ResultSet rs = ps.executeQuery();
+2.3 Java Collections
+* Be fluent in:
+- ArrayList, HashMap, HashSet, LinkedList
+- Iterating using loops and forEach
+- Sorting with Comparator
+* Practice Task:
+- Write a class that uses a Map<String, List<Order>> to store orders per user.
+- Implement a method that returns all orders sorted by date.
 
-* ORM frameworks (Hibernate, JPA) to map Java objects to database tables and manage queries
- via entity classes and repositories.
+2.4 Recursion
+* Understand and practice:
+- Writing recursive methods: factorial, Fibonacci, sum of array, file tree traversal
+- Explaining how recursion works (base case + recursive step)
+* Practice Task:
+- Write a recursive method that calculates factorial and logs each step.
 
-2. 3. Utilizing Java Collections
-- Key interfaces: List, Set, Map, Queue.
-  Examples:
-  List<String> names = new ArrayList<>();
-  names.add("Alice");
-  Set<Integer> ids = new HashSet<>(Arrays.asList(1,2,3));
-  Map<String, User> lookup = new HashMap<>();
-  lookup.put("alice", new User(...));
+3. General Competence (Larger, Integrated Tasks) ***
+3.1 Object-Oriented Program Structures in Web Apps
+* You should practice:
+- Separating concerns:
+  Controller = Servlet
+  Model = Java class representing data (e.g., User, Booking)
+  View = HTML pages with Bootstrap/jQuery
+  Creating reusable utility classes or services
+* Practice Task:
+- Build a mini app that lets users submit a form and see a list of submissions.
+- Store each submission in an object (UserFormData) and collect them in a List.
 
-- Choose impl based on need (e.g. LinkedList for frequent inserts, ArrayList for random access).
+3.2 Full Dynamic Website with Persistent Storage
+* Practice building:
+- A mini full-stack project with:
+  User registration/login (store in memory or in SQLite/H2)
+  Form submission (e.g., contact form, reservation)
+  List display (table of saved data)
+  Session state (logged-in user)
+* Use:
+- Bootstrap for layout
+- jQuery for interactivity
+- Servlets for logic
+- Java collections or local DB for data
+* Suggested Project Practice:
+- "Student Registration System"
+  User registers (name, email, course)
+  Data saved to in-memory list
+  Admin view shows all students
+  Login using sessions
+  Validate form with jQuery
 
-2. 4. Understanding Recursion
-* Definition: a method that calls itself with a smaller problem until a base case.
-  Example (factorial):
-  public int factorial(int n) {
-  if (n <= 1) return 1; // base case
-  return n * factorial(n - 1); // recursive step
-  }
-
-- Use cases: tree traversal, divide‑and‑conquer algorithms (quick‑sort, merge‑sort), graph searches (DFS).
-
-3. General Competence:
-3. 1. Developing Object‑Oriented Program Structures in a Web Architecture
-* MVC pattern:
-- Model: domain/data objects (e.g. User, Product).
-- View: templates or components that render HTML/JS.
-- Controller: handles HTTP requests, updates model, selects view.
-* Layering:
-- Controller layer (Spring MVC controllers)
-- Service layer (business logic)
-- Repository/DAO layer (data access)
-
-3. 2. Developing an Extensive Dynamic Website with Persistent Data Storage
-* Combine all above:
-- Use a framework (e.g. Spring Boot) to wire MVC, DI, security.
-- Store state in a relational database (MySQL, PostgreSQL), accessed via JPA/Hibernate.
-- Manage user sessions for login flows.
-- Serve dynamic pages that adapt to user roles, data in database.
-- Implement caching, pagination, search, and ensure accessibility and performance optimizations.
-
-* Tasks That Require an Internet Connection (to actually run or test):
-* Developing Dynamic Web Pages
-- If you’re using client-side libraries like React or jQuery, setting up or running them
-  typically involves downloading from CDNs or npm/yarn — which needs internet.
-- Also, loading external fonts, APIs, or accessibility validation tools may require online resources.
-* Linking to a Relational Database
-- JDBC and ORM frameworks require:
-- A running database server (MySQL/PostgreSQL).
-- Network access if hosted remotely.
-- Internet access for pulling drivers, updating dependencies, or using online ORMs
-  (e.g. Spring Data JPA with Maven/Gradle) if not cached locally.
-* Developing an Extensive Dynamic Website
-- To deploy or test a complete site, you’d need:
-- Internet (or intranet) access to databases, auth providers, and external services
-  (e.g. payment gateways, Google APIs).
-- Online frameworks, security libraries, or asset delivery (e.g. Bootstrap, Vue/React, JS libraries).
-
-* Tasks that can be done without internet:
-* 1.1 Web Architecture
-- All conceptual. Understanding tiers, REST, and statelessness requires no connectivity.
-* 1.2 Security Challenges
-- You can explain and write defenses for XSS, CSRF, SQLi, etc., without running code
-  or needing access to external services.
-* 1.3 Sessions & Cookies
-- Understanding the flow and implementation is offline-friendly.
-  You don’t need to hit a server to describe how cookies/session IDs work.
-* 1.4 Generics
-- Fully offline — generics and type safety are built into the language and compiler.
-* 2.3 Java Collections
-- You can implement, test, and reason about List, Set, Map, etc., offline — no dependency on external tools.
-* 2.4 Recursion
-- 100% local/mental problem-solving. You can trace and implement recursive algorithms on paper or in an IDE.
-* 3.1 MVC + OOP in Web Context
-- You can sketch out MVC structure and class responsibilities without needing to run a server.
+Suggested Tools & Setup Practice
+Task ---> Practice
+Use jQuery/Bootstrap offline ---> Download & link them locally in HTML
+Run Java servlet ---> Set up servlet manually in IntelliJ (no Spring Boot)
+Debug JavaScript ---> Use Firefox DevTools: breakpoints, inspect elements
+Simulate DB ---> Use List<T> or Map<K, V> as in-memory store
+Maintain state ---> Practice with HttpSession and cookies
 
 --------------------------------------------------------------------------------------------------------
 * ABOUT JAVASCRIPT LANGUAGE
