@@ -1,6 +1,9 @@
 
 /* --------------------------------------- OVERVIEW ---------------------------------------------------
-                                       Exam date: 22 May
+                                                 Exam date: 22 May
+
+- Important: Complete all weekly tasks + oblig 2
+- Color cod by lecture materials: 🔴 🔵 🟢 🟡 🟠 🟣 🟤 ⚫ ⚪ 🔘🟦 🟧 🟥 🟫 🟩 🟨
 
 * During the exam you will have access to Java 17 and IntelliJ IDEA 2022.2.1 Community Edition.
 - You cannot create a project using the built-in Spring Boot initialiser/generator.
@@ -15,8 +18,6 @@
 - Open the link, press Ctrl + A, then Ctrl + C to copy all the code.
 - In IntelliJ, create a new file called jquery.js, paste the code with Ctrl + V, and reference it locally:
   include in html <script src="jquery.js"></script>
-
-Important: Complete all weekly tasks + oblig 2
 
 - Either it works, or its a lesson
 - Its not the end of the world
