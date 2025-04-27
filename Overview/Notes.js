@@ -3,7 +3,7 @@
                                                  Exam date: 22 May
 
 - Important: Complete all weekly tasks + oblig 2
-- Color cod by lecture materials: 🔴 🔵 🟢 🟡 🟠 🟣 🟤 ⚫ ⚪ 🔘🟦 🟧 🟥 🟫 🟩 🟨
+- Color code by lecture materials: 🔴 🔵 🟢 🟡 🟠 🟣 🟤 ⚫ ⚪ 🔘🟦 🟧 🟥 🟫 🟩 🟨
 
 * During the exam you will have access to Java 17 and IntelliJ IDEA 2022.2.1 Community Edition.
 - You cannot create a project using the built-in Spring Boot initialiser/generator.
