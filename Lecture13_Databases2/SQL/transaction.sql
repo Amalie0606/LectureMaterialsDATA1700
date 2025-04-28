@@ -29,3 +29,12 @@ COMMIT;
 - https://www.tutorialspoint.com/springjdbc/springjdbc_rowmapper.htm
 - https://zetcode.com/spring/beanpropertyrowmapper/
 */
+
+--  Weekly task DB2
+-- Goal: Build a full-stack CRUD application around a multi-table data model (PostgreSQL → Spring Boot → Bootstrap frontend).
+--  Select a topic you care about
+--  E.g. LOTR characters and equipment / Pirate ships and crew / Megacorp and Megacorp employees /  chocolate and chocolate reviews
+--   Create two PostgreSQL table with 3 or more columns that represent your data (they should have a one-to-many association)
+--   Setup CRUD with a Spring boot with Repository and Controllers
+--   Add logging
+--   Setup full crud ability in the front-end.

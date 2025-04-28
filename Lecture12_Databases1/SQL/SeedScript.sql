@@ -79,7 +79,17 @@ SELECT name FROM enhancements;
 
 -- SELECT: Primarily used for querying the database to retrieve specific information.
 
--- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/ 
+-- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/
+
+-- Weekly task DB1
+-- Goal: Build a full-stack CRUD application around a single-table data model (PostgreSQL → Spring Boot → Bootstrap frontend).
+-- Select a topic you care about
+--  E.g. LOTR characters / Pirate ships / Megacorp employees /  chocolate reviews
+-- Create a PostgreSQL table with 3 or more columns that represent your data
+-- Setup CRUD with a Spring boot with Repository and Controllers
+-- Make a simple frontend that shows all the data (readAll) in a bootstrap table
+-- Create Postman/Hopscotch API calls to delete/create/update data.
+
 
 
 
