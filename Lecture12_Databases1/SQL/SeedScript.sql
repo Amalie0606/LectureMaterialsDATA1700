@@ -90,6 +90,8 @@ SELECT name FROM enhancements;
 -- Make a simple frontend that shows all the data (readAll) in a bootstrap table
 -- Create Postman/Hopscotch API calls to delete/create/update data.
 
+-- https://www.w3schools.com/sql/sql_create_table.asp
+
 
 
 
