@@ -36,8 +36,8 @@ SELECT id, name, description, type, manufacturer
 FROM public.enhancements;
 
 -- Example SQL Statement: 
-SELECT version();
-
+SELECT name FROM enhancements;
+-- Showing name only from enchantments
 
 -- MY NOTES ----------------------------------------------------------------------------------------------------------
 -- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
