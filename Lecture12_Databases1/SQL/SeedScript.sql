@@ -35,11 +35,78 @@ VALUES
 SELECT id, name, description, type, manufacturer
 FROM public.enhancements;
 
--- Example SQL Statement: 
+-- Example SQL Statements, including CRUD - Create, Read, Update, Delete
+-- Basic queries
 SELECT name FROM enhancements;
--- Showing name only from enchantments
+-- Showing name only from enhancements
 
--- MY NOTES ----------------------------------------------------------------------------------------------------------
+SELECT * FROM enhancements;
+-- Showing all columns and all rows from enhancements
+
+SELECT name, type FROM enhancements;
+-- Showing name and type of each enhancement
+
+-- Filtering Results
+-- READ – Retrieving/viewing data
+SELECT * FROM enhancements WHERE type = 'medical';
+-- Showing all medical enhancements
+
+SELECT name FROM enhancements WHERE type = 'silly';
+-- Showing names of silly enhancements only
+
+SELECT name FROM enhancements WHERE manufacturer = 'Medtronic';
+-- Showing enhancements made by Medtronic
+
+SELECT * FROM enhancements WHERE name ILIKE '%arm%';
+-- Showing enhancements with 'arm' in the name (case-insensitive search)
+
+-- Sorting Results
+SELECT * FROM enhancements ORDER BY name ASC;
+-- Showing all enhancements sorted alphabetically by name
+
+SELECT * FROM enhancements ORDER BY manufacturer DESC;
+-- Showing all enhancements sorted by manufacturer in reverse alphabetical order
+
+-- Inserting New Data
+-- CREATE – Inserting new data
+INSERT INTO enhancements (name, description, type, manufacturer)
+VALUES ('X-Ray Vision Contact Lenses', 'Contact lenses that provide real-time x-ray imagery.', 'futuristic', 'VisionTech Ltd.');
+-- Adding a new futuristic enhancement to the table
+
+-- Updating Data
+-- UPDATE – Modifying existing data
+UPDATE enhancements SET manufacturer = 'Wayne Tech' WHERE name = 'Grappling Hook Arm';
+-- Changing the manufacturer of the Grappling Hook Arm
+
+UPDATE enhancements SET type = 'cyberpunk' WHERE type = 'silly';
+-- Changing all enhancements labeled 'silly' to 'cyberpunk'
+
+-- Deleting Data
+-- DELETE – Removing data
+DELETE FROM enhancements WHERE name = 'Laser Fingernail';
+-- Removing the Laser Fingernail enhancement
+
+DELETE FROM enhancements WHERE type = 'silly';
+-- Removing all silly enhancements
+
+-- Aggregations and Counts
+SELECT COUNT(*) FROM enhancements;
+-- Counting total number of enhancements
+
+SELECT type, COUNT(*) FROM enhancements GROUP BY type;
+-- Showing how many enhancements exist for each type
+
+SELECT manufacturer, COUNT(*) AS total FROM enhancements GROUP BY manufacturer ORDER BY total DESC;
+-- Showing how many enhancements each manufacturer made, sorted by most prolific
+
+-- Limiting and Pagination
+SELECT * FROM enhancements LIMIT 5;
+-- Showing only the first 5 enhancements
+
+SELECT * FROM enhancements OFFSET 5 LIMIT 5;
+-- Skipping the first 5, then showing the next 5 enhancements
+
+-- MY NOTES
 -- PostgreSQL-pgAdmin4 W3Schools : https://www.w3schools.com/postgresql/postgresql_pgadmin4.php
 -- Download: postgresql 17.4-1-windows-x64.exe (port number server is listed: 5432) Selected: Database Server
 -- PostgreSQL is an object-relational database management system.
@@ -81,7 +148,7 @@ SELECT name FROM enhancements;
 
 -- Example database: https://www.ebi.ac.uk/ipd/imgt/hla/
 
--- Weekly task DB1
+-- WEEKLY TASK DB1
 -- Goal: Build a full-stack CRUD application around a single-table data model (PostgreSQL → Spring Boot → Bootstrap frontend).
 -- Select a topic you care about
 --  E.g. LOTR characters / Pirate ships / Megacorp employees /  chocolate reviews
@@ -89,7 +156,6 @@ SELECT name FROM enhancements;
 -- Setup CRUD with a Spring boot with Repository and Controllers
 -- Make a simple frontend that shows all the data (readAll) in a bootstrap table
 -- Create Postman/Hopscotch API calls to delete/create/update data.
-
 -- https://www.w3schools.com/sql/sql_create_table.asp
 
 
