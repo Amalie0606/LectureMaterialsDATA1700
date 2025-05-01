@@ -158,15 +158,6 @@ SELECT * FROM enhancements OFFSET 5 LIMIT 5;
 -- Create Postman/Hopscotch API calls to delete/create/update data.
 -- https://www.w3schools.com/sql/sql_create_table.asp
 
--- Step 1: Create Enhancements Table (basic animal information)
-CREATE TABLE animals (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    species VARCHAR(100),
-    habitat VARCHAR(100),
-    diet TEXT
-);
-
 
 
 
