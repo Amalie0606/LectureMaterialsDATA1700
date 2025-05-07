@@ -1,45 +1,4 @@
-
-/* --------------------------------------- OVERVIEW ---------------------------------------------------
-                                                 Exam date: 22 May
-
-* During the exam you will have access to Java 17 and IntelliJ IDEA 2022.2.1 Community Edition.
-- You cannot create a project using the built-in Spring Boot initialiser/generator.
-* Firefox: try using Firefox DevTools before the exam to get familiar with the layout and shortcuts.
-- Practice basic debugging in Firefox.
-* You will be able to use jQuery and Bootstrap during the exam.
-- How to Use the Libraries:
-1. Direct Reference (if it works) You may be able to reference the library directly like this:
-   <script src="https://provided-url.com/jquery-3.7.1.js"></script>
-2. Manual Download (Fallback) If the direct reference doesn’t work:
-- Right-click the provided link and choose “Save Page As”, or
-- Open the link, press Ctrl + A, then Ctrl + C to copy all the code.
-- In IntelliJ, create a new file called jquery.js, paste the code with Ctrl + V, and reference it locally:
-  include in html <script src="jquery.js"></script>
-
-- Either it works, or its a lesson
-- Its not the end of the world
-- I am the master of my faith, captian of my soul
-- Good luck summer soon
-
-* DATA1700 Learning outcomes *
-- Acquire basic knowledge of web servers and develop skills
-- Develop insight into full-stack web programming
-- Develop skills in and insight into the programming of dynamic web pages that communicate with a database
-- Gain knowledge of information security in web design
-
-* 1. Knowledge *
-1.1 Explaining the principles behind web architecture and client/server architecture
-1.2 Explaining different security challenges and how they are dealt with
-1.3 Explaining how to maintain state using sessions and cookies
-1.4 Explain the purpose with and functioning of generic data types
-* 2. Skills *
-2.1 Developing dynamic web pages by maintaining high-level user-friendliness and accessibility
-2.2 Linking dynamic web pages to a relational database
-2.3 Utilise Java Collections
-2.4 Understanding the functioning and use of recursion
-* 3 General competence *
-3.1 Developing object-oriented program structures in a web architecture
-3.2 Developing an extensive dynamic website with persistent data storage
+/* OVERVIEW
 
 TENTATIVE SUGGESTIONS
 1. Knowledge (Theory You Should Be Able to Explain & Apply) ***
