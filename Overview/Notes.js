@@ -1,5 +1,10 @@
 /* OVERVIEW
 
+0. Oblig 1, Assignment 2
+1. Generic types – Type parameters used to define classes, interfaces, or methods.
+   Collections – Data structures including List, Set, and Map.
+2.
+
 TENTATIVE SUGGESTIONS
 1. Knowledge (Theory You Should Be Able to Explain & Apply) ***
 - 1.1 Web and Client/Server Architecture
