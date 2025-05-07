@@ -1,10 +1,22 @@
 /* OVERVIEW
-
 0. Oblig 1, Assignment 2
-
-11. Generic types – Type parameters used to define classes, interfaces, or methods.
+1. Lecture: Introduction: Web and internet, Application architecture, Fundamental standars, DOM, Fullstack
+2. Lecture: Basic Javascript:
+3. Lecture
+4. Lecture
+5.Lecture
+6.Lecture
+7. Lecture
+8.Lecture
+9. Lecture
+10. Lecture
+11. Lecture (2)
+     Generic types – Type parameters used to define classes, interfaces, or methods.
      Collections – Data structures including List, Set, and Map.
-2.
+12. Lecture
+13. Lecture
+14. Lecture
+15. Lecture
 
 TENTATIVE SUGGESTIONS
 1. Knowledge (Theory You Should Be Able to Explain & Apply) ***
@@ -1300,19 +1312,7 @@ ASYNC/AWAIT
 INTRO
 - With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
 - When a web page is loaded, the browser creates a Document Object Model of the page.
-- The HTML DOM model is constructed as a tree of Objects:
-                              Document
-                            Root element:
-                               <HTML>
-           Element:                                   Element
-            <head>                                     <body>
-               --------------------------------------------
-           Element:       Attribute: ---- Element:      Element:
-            <title>         "href"         <a>           <h1>
-
-            Text:                         Text:           Text
-           "My text"                     "my link"      "my header"
-
+- The HTML DOM model is constructed as a tree of Objects (1)**************************
 * With the object model, JavaScript gets all the power it needs to create dynamic HTML:
 - JavaScript can change all the HTML elements in the page
 - JavaScript can change all the HTML attributes in the page
