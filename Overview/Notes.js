@@ -9,10 +9,9 @@
    Textarea, Submit, Interact with JS (Oblig 1)
 5.Lecture: JavaScript 4: (Wizards and Knights) Dependencies, JQuery, Briefly about requests, DevTools (Oblig 1)
 6.Lecture 6: Introduction to Spring Boot (Not exam)
-
 7. Lecture
 8.Lecture
-9. Lecture
+9. Lecture:
 10. Lecture
 11. Lecture (2)
      Generic types – Type parameters used to define classes, interfaces, or methods.
@@ -21,127 +20,7 @@
 13. Lecture
 14. Lecture
 15. Lecture
-
-TENTATIVE SUGGESTIONS
-1. Knowledge (Theory You Should Be Able to Explain & Apply) ***
-- 1.1 Web and Client/Server Architecture
-* Focus on practicing:
-- Drawing or explaining the flow of an HTTP request from client to server and back.
-- Building a simple Java servlet that processes form input and returns HTML.
-- Understanding how HTML/CSS/JavaScript (client-side) interacts with a servlet (server-side).
-* Practice Task:
-- Create a servlet that handles a POST request and returns a confirmation page.
-
-1.2 Security Challenges in Web Design
-* You should know:
-- XSS (Cross-site Scripting): What it is, and how to prevent it (e.g., escape HTML).
-- SQL Injection: How parameterized queries prevent it.
-- Session hijacking and CSRF: Know the concept, even if not implementing.
-* Practice Task:
-- Simulate a login form and sanitize user inputs.
-- Write a Java method that escapes HTML characters.
-
-1.3 Maintaining State with Sessions and Cookies
-* Practice with:
-- Setting and retrieving cookies in Java servlets.
-- Using HttpSession to store user-specific data (e.g., username after login).
-* Practice Task:
-- Create a login servlet:
-- If login is correct, store the username in session and display a welcome page.
-- Use session.getAttribute("user") and session.setAttribute("user", "value").
-
-1.4 Generic Data Types
-* Be able to:
-- Use List<T>, Map<K,V>, etc. in real code.
-- Write and understand methods like:
-  Example:
-  public <T> void printList(List<T> list) {
-    for (T item : list) {
-        System.out.println(item);
-    }
-  }
-* Practice Task:
-- Create a DAO-style class that stores objects in a List<T>, and returns filtered or sorted results.
-
-2. Skills (What You Should Be Able to Build and Write) ***
-2.1 User-Friendly, Accessible Dynamic Web Pages
-* Use:
-- Bootstrap for responsive layout, accessible labels, contrast, form controls.
-- jQuery for:
-  Showing/hiding sections dynamically
-  Validating input before submission
-* Practice Task:
-- Create a responsive form using Bootstrap.
-- Use jQuery to:
-  Validate fields (e.g., required, email format)
-  Show/hide a comment box only if a checkbox is selected
-
-2.2 Linking to a Relational Database
-* Since a real DB might not be available:
-- Practice using Java JDBC with an embedded DB like H2 or SQLite (if permitted locally).
-- Otherwise, simulate with Java collections.
-* Practice Task:
-- Create a Java class that stores data in a List<MyEntity> and can:
-  Insert a new entry
-  Retrieve all entries
-  Filter/search entries by a field
-
-2.3 Java Collections
-* Be fluent in:
-- ArrayList, HashMap, HashSet, LinkedList
-- Iterating using loops and forEach
-- Sorting with Comparator
-* Practice Task:
-- Write a class that uses a Map<String, List<Order>> to store orders per user.
-- Implement a method that returns all orders sorted by date.
-
-2.4 Recursion
-* Understand and practice:
-- Writing recursive methods: factorial, Fibonacci, sum of array, file tree traversal
-- Explaining how recursion works (base case + recursive step)
-* Practice Task:
-- Write a recursive method that calculates factorial and logs each step.
-
-3. General Competence (Larger, Integrated Tasks) ***
-3.1 Object-Oriented Program Structures in Web Apps
-* You should practice:
-- Separating concerns:
-  Controller = Servlet
-  Model = Java class representing data (e.g., User, Booking)
-  View = HTML pages with Bootstrap/jQuery
-  Creating reusable utility classes or services
-* Practice Task:
-- Build a mini app that lets users submit a form and see a list of submissions.
-- Store each submission in an object (UserFormData) and collect them in a List.
-
-3.2 Full Dynamic Website with Persistent Storage
-* Practice building:
-- A mini full-stack project with:
-  User registration/login (store in memory or in SQLite/H2)
-  Form submission (e.g., contact form, reservation)
-  List display (table of saved data)
-  Session state (logged-in user)
-* Use:
-- Bootstrap for layout
-- jQuery for interactivity
-- Servlets for logic
-- Java collections or local DB for data
-* Suggested Project Practice:
-- "Student Registration System"
-  User registers (name, email, course)
-  Data saved to in-memory list
-  Admin view shows all students
-  Login using sessions
-  Validate form with jQuery
-
-Suggested Tools & Setup Practice
-Task ---> Practice
-Use jQuery/Bootstrap offline ---> Download & link them locally in HTML
-Run Java servlet ---> Set up servlet manually in IntelliJ (no Spring Boot)
-Debug JavaScript ---> Use Firefox DevTools: breakpoints, inspect elements
-Simulate DB ---> Use List<T> or Map<K, V> as in-memory store
-Maintain state ---> Practice with HttpSession and cookies
-
++ All weekly tasks
 --------------------------------------------------------------------------------------------------------
 * ABOUT JAVASCRIPT LANGUAGE
 - Java is a statically-typed language with rigid syntax,
