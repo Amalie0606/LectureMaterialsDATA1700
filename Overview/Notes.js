@@ -3,10 +3,13 @@
 1. Lecture: Introduction: Web and internet, Application architecture, Fundamental standars, DOM, Fullstack
 2. Lecture: Basic Javascript: Syntax: Fundamentals, Variables and data types, Operators and expressions, Control-flow
    Functions, Arrays, Objects, Classes
-3. Lecture: JavaScript 2: Events (Wizards)
-4. Lecture
-5.Lecture
-6.Lecture
+3. Lecture: JavaScript 2: (Wizards) Events: Window / Document, QuerySelector(All) and getElementById, Some best practice
+   DOM manipulation (Oblig 1)
+4. Lecture: JavaScript 3: (Wizards) HTML form: Input types, labels, Select (dropdown), Radiobutton, Checkboxes, Buttons
+   Textarea, Submit, Interact with JS (Oblig 1)
+5.Lecture: JavaScript 4: (Wizards and Knights) Dependencies, JQuery, Briefly about requests, DevTools (Oblig 1)
+6.Lecture 6: Introduction to Spring Boot (Not exam)
+
 7. Lecture
 8.Lecture
 9. Lecture
