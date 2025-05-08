@@ -1,8 +1,9 @@
 /* OVERVIEW
 0. Oblig 1, Assignment 2
 1. Lecture: Introduction: Web and internet, Application architecture, Fundamental standars, DOM, Fullstack
-2. Lecture: Basic Javascript:
-3. Lecture
+2. Lecture: Basic Javascript: Syntax: Fundamentals, Variables and data types, Operators and expressions, Control-flow
+   Functions, Arrays, Objects, Classes
+3. Lecture: JavaScript 2: Events (Wizards)
 4. Lecture
 5.Lecture
 6.Lecture
