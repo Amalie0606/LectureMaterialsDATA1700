@@ -17,9 +17,10 @@
 9. 2. Lecture: Recursion:
 
 10. Lecture: Data structure:
-11. Lecture (x2)
-     Generic types – Type parameters used to define classes, interfaces, or methods.
-     Collections – Data structures including List, Set, and Map.
+11.1. Lecture: Java Generics and Collections(1):
+        Generic types – Type parameters used to define classes, interfaces, or methods.
+        Collections – Data structures including List, Set, and Map.
+11.2. Generic Datatypes and Java Collections(2):
 
 12. Lecture: Databases 1:
 13. Lecture: Databases 2:
