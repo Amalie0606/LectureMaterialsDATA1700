@@ -1,4 +1,4 @@
-/* OVERVIEW
+ /* OVERVIEW
 0. Oblig 1, Assignment 2
 1. Lecture: Introduction: Web and internet, Application architecture, Fundamental standars, DOM, Fullstack
 2. Lecture: Basic Javascript: Syntax: Fundamentals, Variables and data types, Operators and expressions, Control-flow
@@ -9,17 +9,24 @@
    Textarea, Submit, Interact with JS (Oblig 1)
 5.Lecture: JavaScript 4: (Wizards and Knights) Dependencies, JQuery, Briefly about requests, DevTools (Oblig 1)
 6.Lecture 6: Introduction to Spring Boot (Not exam)
-7. Lecture
-8.Lecture
-9. Lecture:
-10. Lecture
-11. Lecture (2)
+
+7. Lecture: Spring Boot REST APIs with Spring Boot:
+8.Lecture: Bootstrap:
+
+9.1. Advanced Javascript:
+9. 2. Lecture: Recursion:
+
+10. Lecture: Data structure:
+11. Lecture (x2)
      Generic types – Type parameters used to define classes, interfaces, or methods.
      Collections – Data structures including List, Set, and Map.
-12. Lecture
-13. Lecture
-14. Lecture
-15. Lecture
+
+12. Lecture: Databases 1:
+13. Lecture: Databases 2:
+14. Lecture: Regex, Validation and Sessions:
+
+15. Lecture: Web security and Scalability: Security, Input validation in Spring Boot,  (Spring Boot not exam),
+      Scalability in Web-applications: Caching, Containers (Assignment 2)
 + All weekly tasks
 --------------------------------------------------------------------------------------------------------
 * ABOUT JAVASCRIPT LANGUAGE
